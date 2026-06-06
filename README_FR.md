@@ -1,8 +1,12 @@
 # NeoMundi — Cartographie des profils TruthfulQA
 
-[English README](./README.md) · [README français](./README_FR.md)
-[English methodology](./Methodology_EN.md) · [Méthodologie française](./Methodologie_FR.md)
-[English usage guide](./USAGE_EN.md) · [Guide d’utilisation en français](./USAGE_FR.md)
+- [English README](./README.md)
+- [README français](./README_FR.md)
+- [English methodology](./Methodology_EN.md)
+- [Méthodologie française](./Methodologie_FR.md)
+- [English usage guide](./USAGE_EN.md)
+- [Guide d’utilisation en français](./USAGE_FR.md)
+- [Open science and contributions](./OPEN_SCIENCE.md)
 
 ## Objectif
 
