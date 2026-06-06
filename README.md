@@ -3,6 +3,7 @@
 [English README](./README.md) · [README français](./README_FR.md)
 [English methodology](./Methodology_EN.md) · [Méthodologie française](./Methodologie_FR.md)
 [English usage guide](./USAGE_EN.md) · [Guide d’utilisation en français](./USAGE_FR.md)
+[Open science and contributions](./OPEN_SCIENCE.md)
 
 Public, reproducible cartography of pseudonymous AI profiles derived from a TruthfulQA factual-evaluation corpus, double-judge validation and separate runtime behavioral signals.
 
