@@ -1,0 +1,13 @@
+﻿profile_id,observation_count_bucket,decision_distribution,regime_distribution,dg_profile_distribution,dg_flagged_rate,flagged_rate,hallucination_nonzero_rate
+PROFILE-161CC5,750-779,"{""ALLOW"": 0.144, ""FLAG"": 0.856}","{""STABLE"": 1.0}","{""<other_or_suppressed>"": 0.034, ""DROP"": 0.854, ""FLAT"": 0.112}",0.815,0.856,0.0
+PROFILE-212079,780-799,"{""<other_or_suppressed>"": 0.038, ""ALLOW"": 0.962}","{""<other_or_suppressed>"": 0.001, ""STABLE"": 0.999}","{""<other_or_suppressed>"": 0.045, ""FLAT"": 0.955}",0.014,0.037,0.037
+PROFILE-486F91,650-699,"{""<other_or_suppressed>"": 0.002, ""ALLOW"": 0.631, ""FLAG"": 0.368}","{""<other_or_suppressed>"": 0.002, ""STABLE"": 0.998}","{""<other_or_suppressed>"": 0.067, ""DROP"": 0.368, ""FLAT"": 0.565}",0.294,0.368,0.089
+PROFILE-48C581,700-749,"{""<other_or_suppressed>"": 0.003, ""ALLOW"": 0.383, ""FLAG"": 0.614}","{""<other_or_suppressed>"": 0.003, ""STABLE"": 0.997}","{""<other_or_suppressed>"": 0.062, ""DROP"": 0.614, ""FLAT"": 0.324}",0.575,0.614,0.02
+PROFILE-59664C,780-799,"{""<other_or_suppressed>"": 0.024, ""ALLOW"": 0.976}","{""STABLE"": 1.0}","{""FLAT"": 1.0}",0.0,0.024,0.05
+PROFILE-5A5C60,780-799,"{""<other_or_suppressed>"": 0.014, ""ALLOW"": 0.986}","{""<other_or_suppressed>"": 0.014, ""STABLE"": 0.986}","{""<other_or_suppressed>"": 0.014, ""FLAT"": 0.986}",0.0,0.0,0.0
+PROFILE-5B3BB7,780-799,"{""ALLOW"": 0.879, ""FLAG"": 0.121}","{""STABLE"": 1.0}","{""DROP"": 0.12, ""FLAT"": 0.88}",0.042,0.121,0.13
+PROFILE-638E26,780-799,"{""ALLOW"": 0.867, ""FLAG"": 0.133}","{""STABLE"": 1.0}","{""DROP"": 0.119, ""FLAT"": 0.881}",0.042,0.133,0.137
+PROFILE-739F7C,780-799,"{""ALLOW"": 0.843, ""FLAG"": 0.157}","{""STABLE"": 1.0}","{""DROP"": 0.148, ""FLAT"": 0.852}",0.047,0.157,0.182
+PROFILE-B912EA,780-799,"{""<other_or_suppressed>"": 0.029, ""ALLOW"": 0.971}","{""<other_or_suppressed>"": 0.001, ""STABLE"": 0.999}","{""<other_or_suppressed>"": 0.028, ""FLAT"": 0.972}",0.009,0.028,0.013
+PROFILE-DEA9C5,650-699,"{""ALLOW"": 0.514, ""FLAG"": 0.486}","{""STABLE"": 1.0}","{""<other_or_suppressed>"": 0.041, ""DROP"": 0.486, ""FLAT"": 0.473}",0.41,0.486,0.08
+PROFILE-F5FF91,780-799,"{""<other_or_suppressed>"": 0.003, ""ALLOW"": 0.997}","{""STABLE"": 1.0}","{""<other_or_suppressed>"": 0.003, ""FLAT"": 0.997}",0.0,0.003,0.001

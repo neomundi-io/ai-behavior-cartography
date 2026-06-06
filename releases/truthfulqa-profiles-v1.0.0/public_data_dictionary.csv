@@ -1,0 +1,20 @@
+﻿file,field,description
+public_profile_summary.csv,profile_id,Stable pseudonymous profile identifier. Private mapping is not included in the public release.
+public_profile_summary.csv,observation_count_bucket,Bucketed number of comparable factual-evaluation pairs for the profile.
+public_profile_summary.csv,judge_observed_agreement_rate,Share of comparable pairs on which Judge A and Judge B produce the same binary verdict.
+public_profile_summary.csv,judge_disagreement_rate,Share of comparable pairs on which Judge A and Judge B produce different binary verdicts.
+public_profile_summary.csv,cohen_kappa,Inter-judge agreement coefficient corrected for agreement expected by chance.
+public_profile_summary.csv,judge_a_positive_rate,Share of comparable pairs receiving a positive verdict from Judge A.
+public_profile_summary.csv,judge_b_positive_rate,Share of comparable pairs receiving a positive verdict from Judge B.
+public_profile_summary.csv,judge_b_minus_judge_a_positive_rate,Difference between the positive-verdict rates produced by Judge B and Judge A.
+public_runtime_profile_summary.csv,decision_distribution,JSON distribution of runtime decisions for the pseudonymous profile.
+public_runtime_profile_summary.csv,regime_distribution,JSON distribution of runtime regimes for the pseudonymous profile.
+public_runtime_profile_summary.csv,dg_profile_distribution,JSON distribution of runtime ΔG profile categories for the pseudonymous profile.
+public_runtime_profile_summary.csv,dg_flagged_rate,"Share of observations with a positive ΔG flag, when available."
+public_runtime_profile_summary.csv,flagged_rate,"Share of observations carrying a generic flag, when available."
+public_runtime_profile_summary.csv,hallucination_nonzero_rate,"Share of observations with a non-zero hallucination signal, when available."
+public_methodology_validation.csv,interpretation_note,Public guardrail: factual judges remain separate and runtime signals are not merged into a composite score.
+public_runtime_profile_summary.csv,profile_id,Stable pseudonymous profile identifier. Private mapping is not included in the public release.
+public_runtime_profile_summary.csv,observation_count_bucket,Bucketed number of runtime observations for the profile.
+public_methodology_validation.csv,metric,Name of the public methodology-validation indicator.
+public_methodology_validation.csv,value,Public value associated with the methodology-validation indicator.

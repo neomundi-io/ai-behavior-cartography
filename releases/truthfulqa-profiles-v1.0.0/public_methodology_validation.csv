@@ -1,0 +1,12 @@
+﻿metric,value
+methodology_name,TruthfulQA double-judge factual evaluation
+release_mode,conservative
+profile_count,12
+n_comparable_pairs,9087
+judge_observed_agreement_rate,0.814
+judge_disagreement_rate,0.186
+cohen_kappa_pooled,0.634
+judge_a_positive_rate,0.463
+judge_b_positive_rate,0.605
+judge_b_minus_judge_a_positive_rate,0.142
+interpretation_note,Judge A and Judge B are presented separately. No consolidated verdict is treated as absolute truth. Runtime signals remain distinct from factual evaluation.

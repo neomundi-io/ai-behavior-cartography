@@ -1,0 +1,33 @@
+{
+  "release_name": "public_release_truthfulqa_profiles_v1_2026-06-06",
+  "generated_at": "2026-06-06T11:24:51",
+  "generator": "export_public_profiles.py",
+  "generator_version": "1.0.3",
+  "release_mode": "conservative",
+  "profile_count": 12,
+  "methodology": "TruthfulQA double-judge factual evaluation with separate runtime behavioral dimensions",
+  "publication_principles": [
+    "Pseudonymous profiles only",
+    "No provider names",
+    "No model names",
+    "No ranking",
+    "No rating",
+    "No composite score",
+    "No raw responses",
+    "No question-level traces",
+    "No judge rationales",
+    "Judges presented separately",
+    "Runtime dimensions kept separate from factual evaluation"
+  ],
+  "files": [
+    "README_PUBLIC.md",
+    "public_profile_summary.csv",
+    "public_runtime_profile_summary.csv",
+    "public_methodology_validation.csv",
+    "public_data_dictionary.csv",
+    "PUBLICATION_REVIEW_CHECKLIST.md",
+    "RELEASE_MANIFEST.json",
+    "CHECKSUMS.sha256"
+  ],
+  "privacy_note": "Pseudonymization is not absolute anonymization. Manual review remains mandatory before publication."
+}
