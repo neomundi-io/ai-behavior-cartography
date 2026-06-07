@@ -1,4 +1,4 @@
-# NeoMundi — TruthfulQA Profile Cartography
+# NeoMundi — AI Behavioral Cartography
 
 - [English README](./README.md)
 - [README français](./README_FR.md)
@@ -8,7 +8,17 @@
 - [Guide d’utilisation en français](./USAGE_FR.md)
 - [Open science and contributions](./OPEN_SCIENCE.md)
 
-Public, reproducible cartography of pseudonymous AI profiles derived from a TruthfulQA factual-evaluation corpus, double-judge validation and separate runtime behavioral signals.
+NeoMundi develops a public, reproducible framework for observing how generative AI systems behave across repeated prompts, factual-evaluation corpora and runtime signals.
+
+This repository documents the progressive qualification of that measurement instrument.
+
+It currently brings together several complementary public releases:
+
+- a TruthfulQA-based factual-evaluation cartography;
+- a June 2026 behavioral cartography focused on repeated-question regimes;
+- methodological notes on judge agreement, observable variation and continuous AI monitoring.
+
+The objective is not to rank providers, but to make AI behavior more observable, auditable and governable over time.
 
 ## Purpose
 
