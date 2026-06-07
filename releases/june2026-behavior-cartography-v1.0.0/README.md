@@ -328,6 +328,17 @@ The objective is to make AI behavior more observable, more discussable and, over
 
 ---
 
+## Explore NeoMundi
+
+NeoMundi is developing a continuous measurement framework to make AI behavior more observable, auditable and governable.
+
+- Test the instrument: https://controltower.neomundi.io
+- Discover NeoMundi & explore the technical documentation: https://github.com/neomundi-io
+- Follow the open-science program: https://neomundi.org
+- Contact: contact@neomundi.io
+
+---
+
 # NeoMundi — Cartographie comportementale des IA — Juin 2026
 
 ## Une publication exploratoire sur les comportements observables des IA
@@ -653,4 +664,15 @@ Cette publication ne constitue pas une théorie achevée.
 Elle représente une première étape publique de mesure.
 
 L’objectif est de rendre les comportements des IA plus observables, plus discutables et, progressivement, plus gouvernables.
+
+---
+
+Explorer NeoMundi
+
+NeoMundi développe un cadre de mesure continue destiné à rendre les comportements des IA plus observables, plus auditables et plus gouvernables.
+
+- Tester l’instrument : https://controltower.neomundi.io
+- Découvrir NeoMundi et consulter la documentation technique : https://github.com/neomundi-io
+- Suivre le programme open science : https://neomundi.org
+- Contact : contact@neomundi.io
 
