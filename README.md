@@ -45,6 +45,17 @@ This release includes:
 * a release manifest;
 * SHA-256 checksums.
 
+---
+
+## Explore NeoMundi
+
+NeoMundi is developing a continuous measurement framework to make AI behavior more observable, auditable and governable.
+
+Test the instrument: https:controltower.neomundi.io
+Discover NeoMundi & explore the technical documentation: https://github.com/neomundi-io
+Follow the open-science program: https://neomundi.org
+Contact: contact@neomundi.io
+
 ## Methodological principles
 
 The public methodology keeps the following layers separate:
