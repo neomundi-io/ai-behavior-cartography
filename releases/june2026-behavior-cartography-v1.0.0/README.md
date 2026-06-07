@@ -1,5 +1,4 @@
 > **French version available below / Version française disponible plus bas**
-> **English version available / Version anglaise disponible**
 
 # NeoMundi — June 2026 Behavioral Cartography
 
