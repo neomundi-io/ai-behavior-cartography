@@ -1,9 +1,5 @@
 > **French version available below / Version française disponible plus bas**
-> A full French translation of this README is available here: [README_FR.md](README_FR.md).
-
 > **English version available / Version anglaise disponible**
-> La version anglaise complète de ce README est disponible ici : [README.md](README.md).
-
 
 # NeoMundi — June 2026 Behavioral Cartography
 
