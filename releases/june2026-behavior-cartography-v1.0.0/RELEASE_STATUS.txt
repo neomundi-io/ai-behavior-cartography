@@ -1,0 +1,9 @@
+PUBLIC BEHAVIOR STORYTELLING CANDIDATE — NOT YET APPROVED FOR PUBLICATION
+
+Required before publication:
+1. Human review of all public files.
+2. Independent methodological audit.
+3. Legal review before publication.
+4. Confirmation that no provider, model, system, pseudonym or private ID leaks.
+5. Confirmation that no exact question-by-regime counts are publicly reconstructible.
+6. Editorial validation of the three infographic messages.

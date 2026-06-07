@@ -1,0 +1,43 @@
+{
+  "project": "NeoMundi — public behavior storytelling candidate",
+  "script_version": "1.4.0",
+  "generated_at_utc": "2026-06-07T16:34:38.699084+00:00",
+  "release_status": "candidate_pending_human_review",
+  "public_doctrine": "Behaviors are published in aggregate. No system profile, pseudonym, point or exact per-question regime count is published.",
+  "infographic_1": {
+    "headline_fr": "Une IA ne se résume pas à sa réponse finale.",
+    "layer_count": 3
+  },
+  "infographic_2": {
+    "headline_fr": "Quand on pose quinze fois la même question, plusieurs régimes de variation apparaissent.",
+    "system_count_private_not_individualized_publicly": 12,
+    "question_count": 8,
+    "generation_count_per_system_question": 15,
+    "response_count": 1440,
+    "system_question_group_count": 96,
+    "public_question_regime_representation": "coarse_non_evaluative_bands_only",
+    "regime_totals": {
+      "anchor": 5,
+      "convergent": 9,
+      "structured": 15,
+      "dispersed": 67
+    },
+    "warning_fr": "Aucun régime n'est intrinsèquement meilleur qu'un autre. Dispersion de forme ne signifie pas erreur."
+  },
+  "infographic_3_secondary_methodological_vignette": {
+    "headline_fr": "Même les juges IA ne sont pas toujours parfaitement d'accord.",
+    "evaluated_response_count": 108,
+    "agreement_count": 103,
+    "disagreement_count": 5,
+    "raw_agreement_rate": 0.9537037037037037,
+    "cohen_kappa": 0.9050632911392406,
+    "warning_fr": "Sous-panel ciblé de 108 réponses représentatives et contrastées, incluant des items simples ou peu discriminants. Le κ ne constitue pas le chiffre phare de la cartographie."
+  },
+  "wide_truthfulqa_context": {
+    "profile_count_private_not_individualized_publicly": 12,
+    "cross_campaign_model_version_alignment_status_counts_private": {
+      "not_verified": 12
+    },
+    "warning_fr": "La campagne TruthfulQA large et la campagne T1 sont distinctes. Leurs résultats sont présentés côte à côte, sans score croisé public."
+  }
+}

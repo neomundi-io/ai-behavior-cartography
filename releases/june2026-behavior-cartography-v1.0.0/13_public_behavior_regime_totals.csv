@@ -1,0 +1,5 @@
+﻿regime_code,regime_label_fr,regime_explanation_fr,system_question_group_count,share_of_96_groups,interpretation_boundary_fr
+anchor,Ancrage textuel exact observé,Une même forme textuelle revient fréquemment à l'identique.,5,5.2%,Distribution agrégée sur 96 couples système-question. Aucun régime n'est intrinsèquement meilleur qu'un autre.
+convergent,Convergence textuelle observable,Les formulations restent proches malgré des variations.,9,9.4%,Distribution agrégée sur 96 couples système-question. Aucun régime n'est intrinsèquement meilleur qu'un autre.
+structured,Variation textuelle structurée,Plusieurs formes proches ou récurrentes apparaissent.,15,15.6%,Distribution agrégée sur 96 couples système-question. Aucun régime n'est intrinsèquement meilleur qu'un autre.
+dispersed,Dispersion textuelle observable,Les formulations restent fortement variées sur les appels répétés.,67,69.8%,Distribution agrégée sur 96 couples système-question. Aucun régime n'est intrinsèquement meilleur qu'un autre.

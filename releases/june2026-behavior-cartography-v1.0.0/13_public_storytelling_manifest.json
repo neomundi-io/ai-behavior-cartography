@@ -1,0 +1,64 @@
+{
+  "project": "NeoMundi — LLM Behavioral Cartography",
+  "step": "13_build_public_behavior_storytelling_cartography",
+  "script_version": "1.4.0",
+  "methodology_version": "public-behavior-storytelling-cartography-v1.4-coarse-bands",
+  "generated_at_utc": "2026-06-07T16:34:38.700579+00:00",
+  "release_status": "candidate_pending_human_review",
+  "public_doctrine": "Aggregate behaviors only. No provider, model, internal system name, pseudonym, profile-level row, profile-level point or exact question-by-regime count.",
+  "public_question_regime_rule": {
+    "mode": "coarse_non_evaluative_bands",
+    "bands": [
+      {
+        "band_code": "none",
+        "band_label_fr": "Aucun observé",
+        "minimum_private_count": 0,
+        "maximum_private_count": 0
+      },
+      {
+        "band_code": "few",
+        "band_label_fr": "Quelques systèmes",
+        "minimum_private_count": 1,
+        "maximum_private_count": 3
+      },
+      {
+        "band_code": "several",
+        "band_label_fr": "Plusieurs systèmes",
+        "minimum_private_count": 4,
+        "maximum_private_count": 8
+      },
+      {
+        "band_code": "most",
+        "band_label_fr": "La plupart des systèmes",
+        "minimum_private_count": 9,
+        "maximum_private_count": 11
+      },
+      {
+        "band_code": "all",
+        "band_label_fr": "Tous les systèmes",
+        "minimum_private_count": 12,
+        "maximum_private_count": 12
+      }
+    ],
+    "reason": "Exact per-question counts, including suppressed cells, can be recoverable by subtraction when row totals are known.",
+    "scope": "Conservative publication design for this release; not a universal privacy guarantee."
+  },
+  "interpretation_allowed": [
+    "Describe aggregated observable textual regimes.",
+    "Describe coarse behavior bands by question.",
+    "Describe aggregated judge agreement and disagreement.",
+    "Describe cohort-level TruthfulQA judge metrics using quartiles."
+  ],
+  "interpretation_forbidden": [
+    "provider ranking",
+    "quality grade",
+    "deployment recommendation",
+    "public pseudonymised profile",
+    "public system-level point",
+    "exact per-question regime count",
+    "single global score",
+    "semantic-equivalence claim from lexical similarity alone",
+    "claim that T1 and wide TruthfulQA are commensurable"
+  ],
+  "human_review_required_before_publication": true
+}
