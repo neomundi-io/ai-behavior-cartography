@@ -51,7 +51,7 @@ This release includes:
 
 NeoMundi is developing a continuous measurement framework to make AI behavior more observable, auditable and governable.
 
-Test the instrument: https:controltower.neomundi.io
+Test the instrument: https://controltower.neomundi.io
 
 Discover NeoMundi & explore the technical documentation: https://github.com/neomundi-io
 
