@@ -1,0 +1,39 @@
+NEOMUNDI — AUDIT DE DÉSIDENTIFICATION
+========================================================================
+Généré le : 2026-07-11T13:54:35+00:00
+
+1. PÉRIMÈTRE
+- Résumé privé : PRIVATE_balanced_cartography_profile_summary.csv
+- Métriques privées : PRIVATE_balanced_cartography_metrics.json
+- Audit privé source : PRIVATE_balanced_cartography_audit.txt
+- Mapping privé : PRIVATE_balanced_cartography_provider_mapping.csv
+- Dossier public : public_release
+
+2. CONTRÔLE DU PANEL PRIVÉ
+- Providers observés : 12
+- Providers attendus : 12
+- Doublons de provider : 0
+- Colonne de volumétrie : n_responses
+- Lignes observées : 5400
+- Lignes attendues : 5400
+- 450 lignes par provider : PASS
+
+3. MAPPING
+- Identifiants créés : 12
+- Format : PROFILE-XXXXXX
+- Méthode : SHA-256 salé, 6 caractères hexadécimaux
+- Mapping inclus dans la release publique : NON
+
+4. CONTRÔLE DE LA RELEASE PUBLIQUE
+- Profils publics : 12
+- Lignes du résumé public : 12
+- Fuites détectées dans le CSV public : AUCUNE
+- Fuites détectées dans le JSON public : AUCUNE
+
+5. VERDICT
+PASS — Aucun nom privé de provider n'est présent dans la release publique.
+
+6. RÈGLE DE PUBLICATION
+- Publier uniquement le contenu du dossier public_release.
+- Ne jamais publier le dossier private_metrics.
+- Ne jamais publier le fichier de mapping privé.
