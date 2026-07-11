@@ -1,0 +1,17 @@
+NeoMundi Public De-identification Audit
+Generated at UTC: 2026-07-10T17:33:03+00:00
+
+Checks:
+- PASS: 12 private profiles mapped
+- PASS: 12 unique public profile IDs
+- PASS: private provider/model columns removed
+- PASS: forbidden provider/model terms absent
+- PASS: private mapping not exported
+
+Public release directory: C:\Users\Danielle\Documents\DATASET\CARTOGRAPHIE\JUILLET\public_cartography_release
+
+Public artifacts:
+- public_monthly_cartography_profile_summary.csv
+- public_monthly_cartography_metrics.json
+
+STATUS: PUBLIC RELEASE SAFE
