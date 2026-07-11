@@ -1,0 +1,34 @@
+NEOMUNDI — AUDIT DE DÉSIDENTIFICATION CANONIQUE
+============================================================================
+Généré le : 2026-07-11T15:15:24+00:00
+
+1. SOURCE DE VÉRITÉ
+- Mapping canonique : profile_mapping_private.csv
+- Nouveaux identifiants générés : NON
+- Politique : single source of truth
+
+2. PANEL
+- Providers privés observés : 12
+- Lignes observées : 5400
+- 450 lignes par provider : PASS
+
+3. RÉSOLUTION DES ALIAS
+- anthropic_claude-sonnet-4-5-20250929 -> anthropic -> PROFILE-59664C
+- cohere_command-a-03-2025 -> cohere -> PROFILE-212079
+- deepseek_deepseek-chat -> deepseek -> PROFILE-638E26
+- google_gemini-2.5-flash -> google -> PROFILE-5A5C60
+- infomaniak_mistralai_Mistral-Small-4-119B-2603 -> euria -> PROFILE-739F7C
+- infomaniak_swiss-ai_Apertus-70B-Instruct-2509 -> apertus -> PROFILE-48C581
+- mistral_mistral-large-latest -> mistral -> PROFILE-5B3BB7
+- openai_gpt-4o-2024-11-20 -> openai -> PROFILE-F5FF91
+- perplexity_sonar -> perplexity -> PROFILE-DEA9C5
+- qwen_qwen-plus -> qwen -> PROFILE-161CC5
+- together_meta-llama_Llama-3.3-70B-Instruct-Turbo -> together -> PROFILE-486F91
+- xai_grok-4 -> xai -> PROFILE-B912EA
+
+4. CONTRÔLE DE FUITE
+- Fuites CSV : AUCUNE
+- Fuites JSON : AUCUNE
+
+5. VERDICT
+PASS — Mapping canonique appliqué, aucune fuite détectée.
