@@ -8,123 +8,54 @@
 - [Guide d’utilisation en français](./USAGE_FR.md)
 - [Open science and contributions](./OPEN_SCIENCE.md)
 
-## Objectif
+# Cartographie des comportements des IA — NeoMundi
 
-Ce dépôt documente une cartographie publique, reproductible et multidimensionnelle de profils IA pseudonymisés construits à partir :
+NeoMundi développe un cadre public et reproductible permettant d’observer le comportement des systèmes d’intelligence artificielle générative à partir de corpus d’évaluation factuelle, d’exécutions répétées et de signaux runtime.
 
-* d’un corpus d’évaluation factuelle TruthfulQA ;
-* d’une validation par double jugement ;
-* de signaux comportementaux runtime séparés.
+Ce dépôt documente la qualification progressive de cet instrument de mesure.
 
-L’objectif n’est pas de publier un classement universel des modèles.
+Il publie des observations comportementales désidentifiées afin de rendre les systèmes d’IA plus observables, auditables et gouvernables dans le temps.
 
-L’objectif est d’exposer des profils observables, auditables et reproductibles sans réduire le comportement des IA à une note unique.
+L’objectif n’est pas de classer les fournisseurs ni de désigner un modèle comme universellement supérieur.
 
-## Ce que ce dépôt ne publie pas
+L’objectif est de mesurer séparément différentes propriétés du comportement des IA, sans les réduire à un score unique.
 
-Ce dépôt ne publie pas :
+## Contenu de ce dépôt
 
-* les noms des providers ;
-* les noms des modèles ;
-* des classements ;
-* des ratings ;
-* des scores composites ;
-* les réponses brutes ;
-* les traces individuelles par question ;
-* les justifications textuelles des juges.
+Ce dépôt rassemble actuellement plusieurs publications publiques complémentaires :
 
-## Release publique
+- une cartographie comportementale jugée reposant sur l’intégralité du corpus TruthfulQA de 790 questions ;
+- une cartographie de stabilité runtime reposant sur trois vagues d’exécution répétées d’un panel équilibré de 150 questions ;
+- une documentation méthodologique sur l’évaluation de la factualité, l’accord entre juges, la stabilité runtime, la variation sémantique et l’observation longitudinale ;
+- des artefacts publics de désidentification et de contrôle des publications.
 
-Release figée actuelle :
+Chaque publication possède son propre protocole, son propre objectif analytique et ses propres limites.
 
-```text
-releases/truthfulqa-profiles-v1.0.0/
-```
+Les protocoles sont publiés séparément et ne sont pas agrégés dans un score universel de qualité.
 
-Elle contient :
+## Structure méthodologique actuelle
 
-* les profils pseudonymisés ;
-* les profils runtime ;
-* les métriques de validation méthodologique ;
-* le dictionnaire public des données ;
-* la checklist de publication ;
-* le manifeste de release ;
-* les checksums SHA-256.
+La cartographie de juillet 2026 repose sur deux protocoles publics indépendants.
 
-## Principes méthodologiques
+### 1. Cartographie jugée des comportements des IA — 12 × 790
 
-La méthodologie publique conserve séparées les couches suivantes :
+Ce protocole comprend :
 
-1. évaluation factuelle ;
-2. calibration inter-juges ;
-3. signaux comportementaux runtime ;
-4. répétabilité ;
-5. profils publics pseudonymisés.
+- 12 profils d’IA désidentifiés ;
+- 790 questions TruthfulQA par profil ;
+- 9 480 réponses sources ;
+- des mesures de stabilité observée ;
+- une évaluation de la factualité par un juge fondé sur OpenAI ;
+- une évaluation de la factualité par un juge fondé sur Mistral ;
+- le taux d’accord entre les juges et le kappa de Cohen.
 
-Aucun verdict binaire consolidé n’est traité comme une vérité absolue.
+Son objectif est de comparer la stabilité observée et la factualité évaluée par des juges externes sur l’ensemble d’un corpus d’évaluation factuelle.
 
-Les signaux runtime ne sont pas fusionnés dans un score universel de qualité.
+Les résultats des deux juges de factualité sont conservés séparément.
 
-## Scripts de validation
+Leurs décisions ne sont pas fusionnées dans un score unique présenté comme une mesure absolue de factualité.
 
-Les scripts reproductibles sont disponibles dans :
+Répertoire de publication :
 
 ```text
-scripts/validation/
-```
-
-Ils couvrent :
-
-* l’audit de l’inventaire du corpus ;
-* l’analyse de l’accord OpenAI ↔ Mistral ;
-* l’analyse de la structure des désaccords.
-
-## Script de publication
-
-Le script d’export public conservateur est disponible ici :
-
-```text
-scripts/publication/export_public_profiles.py
-```
-
-Il :
-
-* applique des identifiants pseudonymisés stables ;
-* sépare les métadonnées privées des artefacts publics ;
-* bloque les fuites de noms de providers et de modèles ;
-* refuse les champs de classement, de rating et de score composite ;
-* génère un manifeste, un dictionnaire public et des checksums SHA-256 ;
-* exige une revue humaine avant publication.
-
-## Résultats méthodologiques actuels
-
-La release actuelle documente :
-
-* 12 profils pseudonymisés ;
-* 9 087 paires de jugements comparables ;
-* 81,42 % d’accord observé ;
-* Cohen kappa poolé = 0,6342 ;
-* 1 688 désaccords ;
-* une différence systématique de calibration entre les deux juges.
-
-Ces résultats décrivent le comportement inter-juges.
-
-Ils ne permettent pas d’établir qu’un juge constitue une référence absolue.
-
-## Extensions prévues
-
-Les prochains travaux incluent :
-
-* un troisième juge indépendant ;
-* une analyse de répétabilité intra-juge ;
-* un panel stratifié d’adjudication humaine ;
-* une réplication sur des corpus métier ;
-* des releases séparées de cartographie comportementale sur panels répétés.
-
-## Règle de gouvernance
-
-> NeoMundi publie des profils IA observables, auditables et reproductibles — pas des classements.
-
-## Licence
-
-Apache License 2.0.
+releases/july2026-behavior-cartography/judged-cartography-12x790/
