@@ -1,5 +1,3 @@
-# NeoMundi — AI Behavioral Cartography
-
 - [English README](./README.md)
 - [README français](./README_FR.md)
 - [English methodology](./Methodology_EN.md)
