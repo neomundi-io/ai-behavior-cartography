@@ -8,139 +8,54 @@
 - [Guide d’utilisation en français](./USAGE_FR.md)
 - [Open science and contributions](./OPEN_SCIENCE.md)
 
-NeoMundi develops a public, reproducible framework for observing how generative AI systems behave across repeated prompts, factual-evaluation corpora and runtime signals.
+# NeoMundi AI Behavior Cartography
+
+NeoMundi develops a public and reproducible framework for observing how generative AI systems behave across factual-evaluation corpora, repeated executions and runtime signals.
 
 This repository documents the progressive qualification of that measurement instrument.
 
-It currently brings together several complementary public releases:
+It publishes de-identified behavioral observations designed to make AI systems more observable, auditable and governable over time.
 
-- a TruthfulQA-based factual-evaluation cartography;
-- a June 2026 behavioral cartography focused on repeated-question regimes;
-- methodological notes on judge agreement, observable variation and continuous AI monitoring.
+The objective is not to rank providers or declare a universally superior model.
 
-The objective is not to rank providers, but to make AI behavior more observable, auditable and governable over time.
+The objective is to measure distinct properties of AI behavior without collapsing them into a single score.
 
-## Purpose
+## What this repository contains
 
-This repository documents a multidimensional AI cartography methodology.
+The repository currently brings together several complementary public releases:
 
-It does not publish:
+- a judged behavioral cartography based on a complete 790-question TruthfulQA corpus;
+- a runtime stability cartography based on three repeated waves of a balanced 150-question panel;
+- methodological documentation on factuality assessment, judge agreement, runtime stability, semantic variation and longitudinal observation;
+- public de-identification and release-control artifacts.
 
-* provider names;
-* model names;
-* rankings;
-* ratings;
-* composite scores;
-* raw responses;
-* question-level traces;
-* judge rationales.
+Each release has its own protocol, analytical purpose and limitations.
 
-The objective is to expose observable, auditable and reproducible profiles without reducing AI behavior to a single leaderboard.
+The protocols are published separately and are not aggregated into a universal quality score.
 
-## Public release
+## Current methodological structure
 
-Current frozen release:
+The July 2026 cartography is based on two independent public protocols.
 
-```text
-releases/truthfulqa-profiles-v1.0.0/
-```
+### 1. Judged AI Behavior Cartography — 12 × 790
 
-This release includes:
+This protocol contains:
 
-* pseudonymous profile summaries;
-* runtime profile summaries;
-* methodology-validation metrics;
-* a public data dictionary;
-* a publication review checklist;
-* a release manifest;
-* SHA-256 checksums.
+- 12 de-identified AI profiles;
+- 790 TruthfulQA questions per profile;
+- 9,480 source responses;
+- observed stability measurements;
+- factuality assessment by an OpenAI-based judge;
+- factuality assessment by a Mistral-based judge;
+- inter-judge agreement and Cohen’s kappa.
 
----
+Its purpose is to compare observed stability and externally judged factuality across a complete factual-evaluation corpus.
 
-## Explore NeoMundi
+The two factuality judges are preserved separately.
 
-NeoMundi is developing a continuous measurement framework to make AI behavior more observable, auditable and governable.
+Their decisions are not merged into a single absolute factuality score.
 
-Test the instrument: https://controltower.neomundi.io
-
-Discover NeoMundi & explore the technical documentation: https://github.com/neomundi-io
-
-Follow the open-science program: https://neomundi.org
-
-Contact: contact@neomundi.io
-
-## Methodological principles
-
-The public methodology keeps the following layers separate:
-
-1. factual evaluation;
-2. inter-judge calibration;
-3. runtime behavioral signals;
-4. repeatability;
-5. pseudonymous public profiles.
-
-No consolidated binary verdict is treated as absolute truth.
-
-Runtime signals are not merged into a universal quality score.
-
-## Validation scripts
-
-Reproducible validation scripts are available in:
+Release directory:
 
 ```text
-scripts/validation/
-```
-
-They cover:
-
-* corpus inventory audit;
-* OpenAI ↔ Mistral agreement analysis;
-* disagreement-structure analysis.
-
-## Publication script
-
-The conservative public exporter is available in:
-
-```text
-scripts/publication/export_public_profiles.py
-```
-
-It:
-
-* applies stable pseudonymization;
-* separates private mapping metadata from public artifacts;
-* blocks provider and model-name leakage;
-* rejects ranking, rating and composite-score fields;
-* generates a public manifest, data dictionary and SHA-256 checksums;
-* requires manual review before publication.
-
-## Current methodological findings
-
-The current TruthfulQA double-judge release documents:
-
-* 12 pseudonymous profiles;
-* 9,087 comparable judgment pairs;
-* 81.42% observed agreement;
-* pooled Cohen kappa = 0.6342;
-* 1,688 disagreements;
-* a systematic calibration difference between the two judges.
-
-These results describe inter-judge behavior. They do not establish an absolute reference judge.
-
-## Planned extensions
-
-Future work includes:
-
-* a third independent judge;
-* intra-judge repeatability analysis;
-* a stratified human-adjudication panel;
-* replication on additional factual and domain-specific corpora;
-* separate behavioral cartography releases on repeated-run panels.
-
-## Governance rule
-
-NeoMundi publishes observable profiles, not rankings.
-
-## License
-
-Apache License 2.0.
+releases/july2026-behavior-cartography/judged-cartography-12x790/
