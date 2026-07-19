@@ -365,7 +365,7 @@ Les contributions ne créent aucune autorité sur le programme, les systèmes ob
 
 ## 13. Principe de contribution
 
-> Contribuer des preuves, des méthodes et une revue critique — pas du bruit.
+> Contribuer avec des preuves, des méthodes et une revue critique.
 >
 > La science ouverte exige de rendre explicites ce qui est publié, ce qui reste protégé et pourquoi.
 
