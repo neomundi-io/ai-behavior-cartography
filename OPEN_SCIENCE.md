@@ -365,7 +365,7 @@ Contributions do not create authority over the programme, the observed systems o
 
 ## 13. Contribution principle
 
-> Contribute evidence, methods and critical review — not hype.
+> Contribute through evidence, methods and critical review.
 >
 > Open science requires transparency about what is published, what remains protected and why.
 
