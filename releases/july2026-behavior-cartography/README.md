@@ -1,47 +1,128 @@
-# NeoMundi Public Cartography Release
+# NeoMundi AI Behavior Cartography — July 2026 Public Release
 
-This folder contains public aggregate outputs generated from the July TruthfulQA cartography judge-alignment process.
+🌐 **Documentation:** [Programme overview](../../README.md) · [Public methodology](../../Methodology_EN.md) · [Méthodologie publique](../../Methodologie_FR.md)
 
-## Scope
+🌍 **NeoMundi:** [AI Observatory](https://github.com/neomundi-io/neomundi-ai-observatory) · [Weekly Barometer](https://github.com/neomundi-io/NeoMundi-Weekly-Barometer)
 
-Two independent judge pipelines were aligned:
+This directory contains the public releases of the **NeoMundi AI Behavior Cartography for July 2026**.
 
-- Mistral judge outputs
-- OpenAI judge outputs
+The July programme is based on two independent and complementary protocols.
 
-The public agreement analysis is computed on the shared aligned observations.
+The protocols answer different analytical questions and are not merged into a universal quality score.
 
-## Main result
+---
 
-- Merged observations: 9384
-- Valid observations used for Cohen's kappa: 9383
-- Excluded rows: 1
-- Observed agreement: 0.856443
-- Expected agreement: 0.570148
-- Cohen's kappa: 0.666031
-- Interpretation: substantial agreement
+## 1. Judged AI Behavior Cartography — `12 × 790`
 
-## Public files
+```text
+12 de-identified AI profiles
+× 790 TruthfulQA questions
+= 9,480 source responses
+```
 
-- `public_judge_agreement_global.csv`
-- `public_judge_agreement_by_model.csv`
-- `public_confusion_matrix.csv`
-- `public_cartography_by_model.csv`
-- `public_disagreements_summary_by_model.csv`
-- `public_manifest.json`
+This protocol compares:
 
-## Method note
+- observed stability;
+- factuality according to an OpenAI-based judge;
+- factuality according to a Mistral-based judge;
+- inter-judge agreement;
+- directional disagreement;
+- Cohen’s kappa as a secondary agreement indicator;
+- coverage and methodological uncertainty.
 
-Cohen's kappa is calculated on binary correctness judgments:
+The outputs of the two judges remain separate.
 
-- `CORRECT` -> True
-- `INCORRECT` -> False
-- `ERROR` or invalid judge outputs are excluded from the main kappa calculation.
+Their decisions are not merged into an absolute factuality score.
 
-## Limits
+[Open the judged Cartography release](./judged-cartography-12x790/)
 
-This release does not claim to establish an absolute truth about AI systems. It documents a reproducible measurement protocol for comparing judge agreement, behavioral variation and risk signals across a controlled cartography panel.
+---
 
-The method depends on the test panel, execution conditions, judge design and evaluation protocol. The LLM-as-a-judge approach is useful but imperfect and must be documented, compared and progressively validated.
+## 2. Runtime Stability Cartography — `12 × 3 × 150`
 
-Generated at: 2026-07-08T19:45:39.162923+00:00
+```text
+12 de-identified AI profiles
+× 3 repeated waves
+× 150 balanced questions
+= 5,400 planned executions
+```
+
+This protocol observes:
+
+- repeated runtime behaviour;
+- stability;
+- semantic variation;
+- coherence;
+- latency;
+- behavioural regimes;
+- variation across waves;
+- measurement coverage.
+
+This protocol focuses on behavioural repeatability and runtime variation rather than external factuality judgement.
+
+[Open the runtime stability Cartography release](./runtime-stability-cartography-12x3x150/)
+
+---
+
+## Why the protocols remain separate
+
+The judged protocol studies the relationship between observed stability and externally assessed factuality across a broad factual corpus.
+
+The runtime protocol studies how behaviour changes across repeated execution waves.
+
+A stable system is not necessarily factually correct.
+
+A variable system is not necessarily factually incorrect.
+
+Judge agreement is not an absolute guarantee of truth.
+
+For these reasons, the protocols remain analytically separate.
+
+---
+
+## Public release boundary
+
+The July releases may publish:
+
+- aggregated results by de-identified profile;
+- judge-agreement metrics;
+- stability and runtime summaries;
+- behavioural-regime distributions;
+- coverage information;
+- metric definitions;
+- release manifests;
+- integrity and verification artefacts;
+- documented limitations.
+
+They do not publish by default:
+
+- provider or model identities;
+- the private profile-mapping registry;
+- complete raw responses;
+- protected prompts;
+- request or trace identifiers;
+- raw API payloads;
+- exact execution timestamps;
+- private judge settings;
+- unpublished campaign exports;
+- internal diagnostics.
+
+The releases are **de-identified**. They are not presented as irreversibly anonymous.
+
+---
+
+## Interpretation doctrine
+
+> A signal is an observation requiring interpretation, not a verdict.
+
+The July Cartography does not constitute:
+
+- a provider ranking;
+- a model leaderboard;
+- a universal benchmark score;
+- a safety certification;
+- a guarantee of factual accuracy;
+- a deployment authorisation;
+- a regulatory determination.
+
+Each protocol must be interpreted within its documented scope, coverage and methodological limitations.
