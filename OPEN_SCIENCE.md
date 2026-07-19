@@ -1,404 +1,380 @@
-# NeoMundi — Open Science, Source Corpus and Contributions
+# NeoMundi AI Behavior Cartography — Open Science and Contributions
 
-[English README](./README.md) · [README français](./README_FR.md)
-[English methodology](./Methodology_EN.md) · [Méthodologie française](./Methodologie_FR.md)
-[English usage guide](./USAGE_EN.md) · [Guide d’utilisation en français](./USAGE_FR.md)
+🌐 **Language:** [English](./OPEN_SCIENCE.md) · [Français](./OPEN_SCIENCE_FR.md)
+
+📘 **Programme overview:** [English README](./README.md) · [README français](./README_FR.md)
+
+📐 **Methodology:** [English](./Methodology_EN.md) · [Français](./Methodologie_FR.md)
+
+🧭 **Usage guides:** [English](./USAGE_EN.md) · [Français](./USAGE_FR.md)
+
+🌍 **NeoMundi:** [AI Observatory](https://github.com/neomundi-io/neomundi-ai-observatory) · [Weekly Barometer](https://github.com/neomundi-io/NeoMundi-Weekly-Barometer) · [English website](https://neomundi.org/en/home) · [Site français](https://neomundi.org/)
 
 ---
 
-# English
-
-## From benchmark scores to observable AI profiles
+## 1. From benchmark scores to observable AI behaviour profiles
 
 A leaderboard can answer one immediate question:
 
 > Which system ranks first?
 
-But it can hide more important questions:
+But it can conceal more important questions:
 
-* Do two judges evaluate the same answer in the same way?
-* Are disagreements random or structurally concentrated?
-* Does runtime stability remain visible when factual judgments diverge?
-* Can the same AI system exhibit different behavioral signatures across repeated panels?
-* What information disappears when several dimensions are compressed into one score?
+- Do two judges evaluate the same answer in the same way?
+- Are disagreements random or structurally concentrated?
+- Does runtime stability remain visible when factual judgements diverge?
+- Can the same AI system exhibit different behavioural signatures across repeated panels?
+- What information disappears when several dimensions are compressed into one score?
+- Which observations are robust, and which remain protocol-dependent?
 
-NeoMundi publishes multidimensional, pseudonymous profiles to make these questions observable.
+NeoMundi publishes multidimensional, de-identified AI behaviour profiles to make these questions observable.
 
 The objective is not to replace one leaderboard with another.
 
-The objective is to expose a reproducible map of:
+The objective is to expose a reproducible cartography of:
 
-* factual-evaluation views;
-* inter-judge calibration;
-* runtime behavioral signals;
-* disagreement zones;
-* repeatability;
-* methodological uncertainty.
+- factual-evaluation views;
+- inter-judge calibration;
+- runtime behavioural signals;
+- disagreement zones;
+- repeatability;
+- semantic variation;
+- coherence;
+- behavioural regimes;
+- methodological uncertainty.
 
-## Open source corpus
+> A signal is an observation requiring interpretation, not a verdict.
 
-This repository builds on the TruthfulQA benchmark introduced by Stephanie Lin, Jacob Hilton and Owain Evans.
+---
 
-Original paper:
+## 2. Scope of the public Cartography
+
+The NeoMundi AI Behavior Cartography currently includes two separate public protocols.
+
+### Judged Cartography — `12 × 790`
 
 ```text
-TruthfulQA: Measuring How Models Mimic Human Falsehoods
-https://arxiv.org/abs/2109.07958
+12 de-identified AI profiles
+× 790 TruthfulQA questions
+= 9,480 source responses
 ```
 
-ACL Anthology publication:
+This protocol studies:
+
+- observed stability;
+- factuality according to an OpenAI-based judge;
+- factuality according to a Mistral-based judge;
+- inter-judge agreement;
+- Cohen’s kappa;
+- directional disagreement;
+- methodological uncertainty.
+
+### Runtime Cartography — `12 × 3 × 150`
 
 ```text
-https://aclanthology.org/2022.acl-long.229/
+12 de-identified AI profiles
+× 3 repeated waves
+× 150 balanced questions
+= 5,400 executions
 ```
 
-Official source repository:
+This protocol studies:
+
+- repeated runtime behaviour;
+- stability;
+- semantic variation;
+- coherence;
+- latency;
+- behavioural regimes;
+- inter-wave variation;
+- measurement coverage.
+
+The two protocols are complementary, but they are not merged into a universal quality score.
+
+---
+
+## 3. Open-science doctrine
+
+NeoMundi treats open science as a commitment to make the following elements inspectable:
+
+- methods;
+- assumptions;
+- public datasets;
+- metric definitions;
+- release manifests;
+- integrity hashes;
+- analytical limitations;
+- validation logic;
+- interpretation boundaries;
+- documented corrections;
+- public scripts where publication is compatible with security and research integrity.
+
+Open science does not require uncontrolled disclosure of protected operational material.
+
+> Open science means making methods, assumptions, released evidence, limitations and verification artefacts inspectable. It does not require uncontrolled publication of protected operational data.
+
+Public transparency and operational protection are therefore treated as complementary requirements.
+
+---
+
+## 4. Source corpus
+
+The judged protocol builds on the TruthfulQA benchmark introduced by Stephanie Lin, Jacob Hilton and Owain Evans.
+
+- [Original paper — TruthfulQA: Measuring How Models Mimic Human Falsehoods](https://arxiv.org/abs/2109.07958)
+- [ACL Anthology publication](https://aclanthology.org/2022.acl-long.229/)
+- [Official TruthfulQA repository](https://github.com/sylinrl/TruthfulQA)
+- [Official public question and reference-answer file](https://github.com/sylinrl/TruthfulQA/blob/main/TruthfulQA.csv)
+
+The original benchmark paper describes 817 questions across 38 categories.
+
+The current NeoMundi judged Cartography uses the complete 790-question corpus retained by the active public protocol.
+
+TruthfulQA is used as a factual-evaluation instrument. Results derived from it must not be interpreted as universal claims across all domains, languages, tasks or deployment contexts.
+
+---
+
+## 5. Public releases
+
+The repository currently contains the following public release directories:
+
+- [July 2026 Behavior Cartography](./releases/july2026-behavior-cartography/)
+- [June 2026 Behavior Cartography v1.0.0](./releases/june2026-behavior-cartography-v1.0.0/)
+- [TruthfulQA Profiles v1.0.0](./releases/truthfulqa-profiles-v1.0.0/)
+
+The July 2026 programme separates:
+
+- the judged `12 × 790` protocol;
+- the runtime `12 × 3 × 150` protocol.
+
+Each release has its own:
+
+- protocol scope;
+- methodology reference;
+- data inventory;
+- limitations;
+- manifest;
+- integrity information;
+- reproducibility boundary.
+
+Historical releases remain part of the public record and should not be silently rewritten.
+
+---
+
+## 6. Public evidence
+
+Depending on the release, NeoMundi may publish:
+
+- aggregated results by de-identified profile;
+- aggregated results by question or question family;
+- stability measurements;
+- factuality outputs from separate judges;
+- inter-judge agreement;
+- Cohen’s kappa;
+- semantic-variation indicators;
+- coherence indicators;
+- latency summaries;
+- behavioural-regime distributions;
+- inter-wave comparisons;
+- coverage and completeness information;
+- public data dictionaries;
+- metric contracts;
+- analytical reports;
+- visual cartographies;
+- release manifests;
+- SHA-256 checksums;
+- methodological limitations.
+
+These artefacts are intended to support:
+
+- internal consistency checks;
+- independent review;
+- methodological critique;
+- reproducibility within documented boundaries;
+- comparison across compatible releases;
+- public discussion of observed AI behaviour.
+
+---
+
+## 7. Protected research material
+
+The public repository does not represent the complete NeoMundi measurement record.
+
+Depending on the protocol, protected material may include:
+
+- provider and model identities;
+- the private profile-mapping registry;
+- complete raw responses;
+- complete prompts where disclosure would compromise the protocol;
+- request IDs;
+- trace IDs;
+- raw API payloads;
+- exact execution timestamps;
+- API keys;
+- infrastructure credentials;
+- private judge settings;
+- detailed unaggregated token and cost data;
+- unpublished campaign exports;
+- internal diagnostics;
+- debugging material;
+- internal review notes;
+- proprietary calculation logic;
+- artefacts that could enable profile re-identification;
+- experimental signals not yet qualified for publication.
+
+This separation protects:
+
+- confidentiality;
+- operational continuity;
+- research integrity;
+- de-identification;
+- security;
+- future longitudinal comparability.
+
+The public releases are **de-identified**. They are not presented as irreversibly anonymous.
+
+---
+
+## 8. Current methodological signals
+
+The frozen judged release documents:
 
 ```text
-https://github.com/sylinrl/TruthfulQA
-```
-
-Official public list of benchmark questions and reference answers:
-
-```text
-https://github.com/sylinrl/TruthfulQA/blob/main/TruthfulQA.csv
-```
-
-The original benchmark paper describes 817 questions spanning 38 categories, including health, law, finance and politics.
-
-The official repository maintains the current source questions and reference answers and documents later benchmark updates.
-
-## NeoMundi public release
-
-The current frozen NeoMundi release is available in:
-
-```text
-releases/truthfulqa-profiles-v1.0.0/
-```
-
-It publishes:
-
-* 12 stable pseudonymous profiles;
-* multidimensional factual-evaluation summaries;
-* runtime behavioral summaries;
-* inter-judge agreement metrics;
-* a public data dictionary;
-* a release manifest;
-* SHA-256 checksums.
-
-It does not publish:
-
-* provider names;
-* model names;
-* rankings;
-* ratings;
-* composite scores;
-* raw answers;
-* profile-linked question-level traces;
-* judge rationales.
-
-## Current methodological signal
-
-The current release documents:
-
-```text
-12 pseudonymous profiles
-9,087 comparable judgment pairs
+12 de-identified profiles
+9,480 source responses
+9,087 comparable judgement pairs
 81.42% observed inter-judge agreement
-pooled Cohen kappa = 0.6342
+pooled Cohen’s kappa = 0.6342
 1,688 disagreements
 ```
 
-Among the disagreements, the directional imbalance is systematic:
+Among the disagreements:
 
 ```text
 Judge A negative / Judge B positive: 1,491
 Judge A positive / Judge B negative:   197
 ```
 
-This result does not establish an absolute reference judge.
+This directional asymmetry does not establish an absolute reference judge.
 
-It shows that factual evaluation itself must be observed as a calibrated, traceable layer.
+It shows that factual evaluation must itself be treated as a calibrated, traceable and observable layer.
 
-## Why this matters
+The runtime `12 × 3 × 150` protocol separately documents repeated behavioural properties and must not be collapsed into the judged factuality results.
 
-A model-selection decision cannot rely on a single public score.
+---
+
+## 9. Why this matters
+
+A model-selection or deployment decision cannot responsibly rely on a single public score.
 
 A serious diagnostic may need to separate:
 
-* factual evaluation;
-* judge calibration;
-* runtime stability;
-* repeatability;
-* domain-specific risk;
-* deployment context;
-* cost and efficiency constraints.
+- factual evaluation;
+- judge calibration;
+- runtime stability;
+- semantic variation;
+- repeatability;
+- coherence;
+- latency;
+- domain-specific risk;
+- deployment context;
+- cost and efficiency constraints;
+- governance requirements.
 
-The public release intentionally exposes observable profiles rather than universal recommendations.
+The public Cartography intentionally exposes observable dimensions rather than universal recommendations.
 
-## Open questions
+---
+
+## 10. Open questions
 
 The following questions remain open:
 
-1. Does the inter-judge asymmetry persist with a third independent judge?
+1. Does inter-judge asymmetry persist with a third independent judge?
 2. Which disagreement zones remain stable across repeated judging runs?
-3. How much intra-judge variability exists at controlled temperature?
+3. How much intra-judge variability exists under controlled conditions?
 4. Which high-disagreement questions require human adjudication?
-5. Do runtime behavioral signatures remain stable across repeated panels?
-6. Can a reduced 150-question panel reproduce the behavioral signal of a 450-question panel?
-7. Which runtime dimensions become more informative in legal, medical or agentic contexts?
+5. Do runtime behavioural signatures remain stable across repeated monthly panels?
+6. Can reduced panels preserve the signal of larger behavioural corpora?
+7. Which runtime dimensions become more informative in legal, medical, financial or agentic contexts?
 8. How should multidimensional AI profiles be represented without recreating a hidden leaderboard?
+9. Which protocol changes preserve longitudinal comparability?
+10. Which public artefacts provide the strongest evidence without compromising de-identification?
 
-## Planned extensions
+---
 
-Future public work includes:
+## 11. Planned extensions
 
-* a third independent judge;
-* intra-judge repeatability analysis;
-* a stratified human-adjudication panel;
-* behavioral cartography on repeated-run panels;
-* domain-specific panels;
-* multilingual extensions;
-* contributor-proposed analyses.
+Future public work may include:
 
-## Invitation to contribute
+- a third independent judge;
+- intra-judge repeatability analysis;
+- a stratified human-adjudication panel;
+- additional repeated-wave cartographies;
+- sector-specific panels;
+- multilingual corpora;
+- adversarial protocols;
+- independent replication;
+- contributor-proposed analyses;
+- additional runtime signals;
+- longitudinal monthly comparisons.
 
-Researchers, engineers, auditors, domain experts and AI builders are invited to contribute.
+Every extension must document its protocol, limits and compatibility with earlier releases.
+
+---
+
+## 12. Invitation to contribute
+
+Researchers, engineers, auditors, statisticians, domain experts, translators and AI builders are invited to contribute.
 
 Possible contributions include:
 
-* methodological review;
-* reproducibility testing;
-* additional public panels;
-* third-judge experiments;
-* human-adjudication protocols;
-* statistical analysis;
-* data visualization;
-* legaltech, medical-AI or autonomous-agent use cases;
-* multilingual datasets;
-* documentation improvements.
+- methodological review;
+- reproducibility testing;
+- additional public panels;
+- third-judge experiments;
+- human-adjudication protocols;
+- statistical analysis;
+- data visualisation;
+- legal, medical, financial or agentic use cases;
+- multilingual datasets;
+- documentation improvements;
+- interoperability analysis;
+- critical review of interpretation boundaries.
 
-To contribute:
+### Submit a contribution
 
-* open a GitHub issue;
-* propose a pull request;
-* describe the hypothesis;
-* document the corpus;
-* document the protocol;
-* version the scripts;
-* disclose limitations;
-* avoid unsupported universal claims.
+- [Submit a contribution — English](https://neomundi.org/en/submit-a-contribution)
+- [Proposer une contribution — Français](https://neomundi.org/proposez-une-contribution)
+- [NeoMundi contribution and governance framework](https://github.com/neomundi-io/neomundi-ai-observatory/tree/main/governance)
 
-## Contribution principle
+Contributors should:
 
-> Contribute evidence, not hype.
-> Publish observable profiles, not rankings.
+- state the hypothesis;
+- document the corpus;
+- document the protocol;
+- version the scripts;
+- disclose limitations;
+- separate evidence from interpretation;
+- avoid unsupported universal claims;
+- respect protected-data boundaries;
+- preserve attribution.
 
----
-
-## Contact
-
-To contribute, propose a collaboration or request additional information:
-
-* Website: [neomundi.org](https://neomundi.org)
-* Email: `contact@neomundi.org`
+Contributions do not create authority over the programme, the observed systems or NeoMundi’s institutional decisions unless explicitly agreed in writing.
 
 ---
 
-# Français
+## 13. Contribution principle
 
-## Des scores de benchmark aux profils IA observables
-
-Un classement répond immédiatement à une question :
-
-> Quel système arrive en tête ?
-
-Mais il peut masquer des questions plus importantes :
-
-* Deux juges évaluent-ils la même réponse de la même manière ?
-* Les désaccords sont-ils aléatoires ou concentrés dans certaines zones ?
-* La stabilité runtime reste-t-elle observable lorsque les jugements factuels divergent ?
-* Un même système IA présente-t-il des signatures différentes selon les panels répétés ?
-* Quelles informations disparaissent lorsque plusieurs dimensions sont compressées dans une note unique ?
-
-NeoMundi publie des profils pseudonymisés et multidimensionnels afin de rendre ces questions observables.
-
-L’objectif n’est pas de remplacer un classement par un autre.
-
-L’objectif est d’exposer une cartographie reproductible :
-
-* des lectures factuelles ;
-* de la calibration inter-juges ;
-* des signaux comportementaux runtime ;
-* des zones de divergence ;
-* de la répétabilité ;
-* de l’incertitude méthodologique.
-
-## Corpus open source
-
-Ce dépôt s’appuie sur le benchmark TruthfulQA introduit par Stephanie Lin, Jacob Hilton et Owain Evans.
-
-Article original :
-
-```text
-TruthfulQA: Measuring How Models Mimic Human Falsehoods
-https://arxiv.org/abs/2109.07958
-```
-
-Publication ACL Anthology :
-
-```text
-https://aclanthology.org/2022.acl-long.229/
-```
-
-Dépôt officiel :
-
-```text
-https://github.com/sylinrl/TruthfulQA
-```
-
-Liste publique officielle des questions et réponses de référence :
-
-```text
-https://github.com/sylinrl/TruthfulQA/blob/main/TruthfulQA.csv
-```
-
-L’article original décrit 817 questions couvrant 38 catégories, dont la santé, le droit, la finance et la politique.
-
-Le dépôt officiel maintient la version courante des questions et réponses de référence et documente les évolutions ultérieures du benchmark.
-
-## Release publique NeoMundi
-
-La release NeoMundi figée est disponible ici :
-
-```text
-releases/truthfulqa-profiles-v1.0.0/
-```
-
-Elle publie :
-
-* 12 profils pseudonymisés stables ;
-* des synthèses multidimensionnelles d’évaluation factuelle ;
-* des synthèses comportementales runtime ;
-* des métriques d’accord inter-juges ;
-* un dictionnaire public ;
-* un manifeste ;
-* des checksums SHA-256.
-
-Elle ne publie pas :
-
-* les noms des providers ;
-* les noms des modèles ;
-* des classements ;
-* des ratings ;
-* des scores composites ;
-* les réponses brutes ;
-* des traces individuelles reliées aux profils ;
-* les justifications textuelles des juges.
-
-## Signal méthodologique actuel
-
-La release documente :
-
-```text
-12 profils pseudonymisés
-9 087 paires de jugements comparables
-81,42 % d’accord inter-juges observé
-Cohen kappa poolé = 0,6342
-1 688 désaccords
-```
-
-Parmi les désaccords, l’asymétrie directionnelle est systématique :
-
-```text
-Juge A négatif / Juge B positif : 1 491
-Juge A positif / Juge B négatif :   197
-```
-
-Ce résultat ne permet pas de désigner un juge comme référence absolue.
-
-Il montre que l’évaluation factuelle doit elle-même être observée comme une couche calibrée et traçable.
-
-## Pourquoi c’est important
-
-Une décision d’achat ou de déploiement ne peut pas reposer uniquement sur une note publique.
-
-Un diagnostic sérieux peut nécessiter de séparer :
-
-* l’évaluation factuelle ;
-* la calibration des juges ;
-* la stabilité runtime ;
-* la répétabilité ;
-* les risques métier ;
-* le contexte de déploiement ;
-* les contraintes de coût et d’efficience.
-
-La release publique expose volontairement des profils observables plutôt que des recommandations universelles.
-
-## Questions ouvertes
-
-Les questions suivantes restent ouvertes :
-
-1. L’asymétrie inter-juges persiste-t-elle avec un troisième juge indépendant ?
-2. Quelles zones de désaccord restent stables entre plusieurs répétitions du jugement ?
-3. Quelle est la variabilité intra-juge à température contrôlée ?
-4. Quelles questions à forte divergence nécessitent une adjudication humaine ?
-5. Les signatures comportementales runtime persistent-elles sur des panels répétés ?
-6. Un panel réduit de 150 questions reproduit-il le signal comportemental d’un panel de 450 questions ?
-7. Quelles dimensions runtime deviennent plus informatives dans des contextes juridiques, médicaux ou agentiques ?
-8. Comment représenter des profils IA multidimensionnels sans recréer implicitement un classement ?
-
-## Extensions prévues
-
-Les prochains travaux publics incluent :
-
-* un troisième juge indépendant ;
-* une analyse de répétabilité intra-juge ;
-* un panel stratifié d’adjudication humaine ;
-* une cartographie comportementale sur panels répétés ;
-* des panels métier ;
-* des extensions multilingues ;
-* des analyses proposées par des contributeurs.
-
-## Invitation à contribuer
-
-Chercheurs, ingénieurs, auditeurs, experts métier et concepteurs IA sont invités à contribuer.
-
-Les contributions peuvent porter sur :
-
-* la revue méthodologique ;
-* les tests de reproductibilité ;
-* de nouveaux panels publics ;
-* l’ajout d’un troisième juge ;
-* les protocoles d’adjudication humaine ;
-* l’analyse statistique ;
-* la visualisation des données ;
-* les cas d’usage legaltech, IA médicale ou agents autonomes ;
-* les jeux de données multilingues ;
-* l’amélioration de la documentation.
-
-Pour contribuer :
-
-* ouvrir une issue GitHub ;
-* proposer une pull request ;
-* expliciter l’hypothèse ;
-* documenter le corpus ;
-* documenter le protocole ;
-* versionner les scripts ;
-* exposer les limites ;
-* éviter toute affirmation universelle insuffisamment étayée.
-
-## Principe de contribution
-
-> Contribuer des preuves, pas du bruit.
-> Publier des profils observables, pas des classements.
+> Contribute evidence, methods and critical review — not hype.
+>
+> Open science requires transparency about what is published, what remains protected and why.
 
 ---
 
-## Contact
+## 14. Contact
 
-Pour contribuer, proposer une collaboration ou demander des informations complémentaires :
+To propose a collaboration or request additional information:
 
-* Site : [neomundi.org](https://neomundi.org)
-* Email : `contact@neomundi.org`
-
+- **Website:** [neomundi.org/en/home](https://neomundi.org/en/home)
+- **Contribution form:** [Submit a contribution](https://neomundi.org/en/submit-a-contribution)
+- **Email:** [contact@neomundi.org](mailto:contact@neomundi.org)
