@@ -1,88 +1,88 @@
-# NeoMundi AI Behavior Cartography
+# Cartographie du comportement des IA NeoMundi
 
-🌐 **Language:** [English](./README.md) · [Français](./README_FR.md)
+🌐 **Langue :** [English](./README.md) · [Français](./README_FR.md)
 
-🌍 **NeoMundi:** [English website](https://neomundi.org/en/home) · [Site français](https://neomundi.org/)
+🌍 **NeoMundi :** [Site français](https://neomundi.org/) · [English website](https://neomundi.org/en/home)
 
-The **NeoMundi AI Behavior Cartography** is a public and reproducible measurement programme designed to compare how generative AI systems behave across shared factual corpora, repeated executions and documented runtime conditions.
+La **Cartographie du comportement des IA NeoMundi** est un programme public et reproductible de mesure comparative conçu pour observer comment les systèmes d’IA générative se comportent sur des corpus factuels communs, lors d’exécutions répétées et dans des conditions runtime documentées.
 
-It does not rank providers or models.
+Elle ne classe ni les fournisseurs ni les modèles.
 
-It publishes de-identified, comparable and methodologically separated observations intended to make differences in stability, factuality, semantic variation, coherence, latency and behavioural regimes visible.
+Elle publie des observations désidentifiées, comparables et méthodologiquement séparées afin de rendre visibles les différences de stabilité, de factualité, de variation sémantique, de cohérence, de latence et de régimes comportementaux.
 
-> A benchmark produces a score.  
-> NeoMundi maps distinct behavioural properties without collapsing them into one verdict.
-
----
-
-## Programme objective
-
-The Cartography is designed to answer several complementary questions:
-
-- How do observed AI systems behave under comparable conditions?
-- How stable are their responses across repeated executions?
-- How does observed stability relate to externally judged factuality?
-- Where do independent factuality judges agree or disagree?
-- Which systems exhibit greater semantic variation or regime change?
-- How do runtime signals evolve across repeated waves?
-- Which properties can be measured separately without producing a universal quality score?
-
-The Cartography treats AI behaviour as a multidimensional measurement object.
-
-It does not assume that stability implies truth, that factuality implies stability, or that one aggregate score can represent the full behaviour of an AI system.
+> Un benchmark produit un score.  
+> NeoMundi cartographie des propriétés comportementales distinctes sans les réduire à un verdict unique.
 
 ---
 
-## Programme structure
+## Objectif du programme
 
-The repository contains six main components:
+La Cartographie vise à répondre à plusieurs questions complémentaires :
 
-- **Judged AI Behavior Cartography** — comparative observation across a complete factual-evaluation corpus;
-- **Runtime Stability Cartography** — repeated runtime observation across multiple waves;
-- **Monthly releases** — dated public publication cycles;
-- **Methodology** — active protocol definitions and interpretation boundaries;
-- **Usage guides** — instructions for reproducing or reviewing the public workflows;
-- **Open science framework** — contribution, review and public reuse principles.
+- Comment les systèmes d’IA observés se comportent-ils dans des conditions comparables ?
+- Quel est le niveau de stabilité de leurs réponses lors d’exécutions répétées ?
+- Comment la stabilité observée se rapporte-t-elle à la factualité évaluée par des juges externes ?
+- Dans quelles situations les juges de factualité indépendants sont-ils d’accord ou en désaccord ?
+- Quels systèmes présentent davantage de variation sémantique ou de changements de régime ?
+- Comment les signaux runtime évoluent-ils entre des vagues répétées ?
+- Quelles propriétés peuvent être mesurées séparément sans produire un score universel de qualité ?
 
----
+La Cartographie considère le comportement des IA comme un objet de mesure multidimensionnel.
 
-## July 2026 methodological structure
-
-The July 2026 Cartography is based on two independent public protocols.
-
-These protocols answer different analytical questions and remain separate.
+Elle ne suppose ni que la stabilité implique la vérité, ni que la factualité implique la stabilité, ni qu’un score agrégé unique puisse représenter l’ensemble du comportement d’un système d’IA.
 
 ---
 
-## Protocol 1 — Judged AI Behavior Cartography
+## Structure du programme
 
-The first protocol is based on:
+Le dépôt contient six composantes principales :
+
+- **Cartographie jugée du comportement des IA** — observation comparative sur un corpus complet d’évaluation factuelle ;
+- **Cartographie de stabilité runtime** — observation runtime répétée sur plusieurs vagues ;
+- **Releases mensuelles** — cycles publics de publication datés ;
+- **Méthodologie** — définitions actives des protocoles et limites d’interprétation ;
+- **Guides d’utilisation** — instructions pour reproduire ou examiner les workflows publics ;
+- **Cadre de science ouverte** — principes de contribution, de revue et de réutilisation publique.
+
+---
+
+## Structure méthodologique de juillet 2026
+
+La Cartographie de juillet 2026 repose sur deux protocoles publics indépendants.
+
+Ces protocoles répondent à des questions analytiques différentes et restent séparés.
+
+---
+
+## Protocole 1 — Cartographie jugée du comportement des IA
+
+Le premier protocole repose sur :
 
 ```text
-12 de-identified AI profiles
-× 790 TruthfulQA questions
-= 9,480 source responses
+12 profils d’IA désidentifiés
+× 790 questions TruthfulQA
+= 9 480 réponses sources
 ```
 
-The protocol includes:
+Le protocole comprend :
 
-- 12 de-identified AI profiles;
-- the complete 790-question TruthfulQA corpus;
-- 9,480 source responses;
-- observed stability measurements;
-- factuality assessment by an OpenAI-based judge;
-- factuality assessment by a Mistral-based judge;
-- inter-judge agreement;
-- Cohen’s kappa as a secondary agreement indicator;
-- separate preservation of each judge’s decisions.
+- 12 profils d’IA désidentifiés ;
+- le corpus complet de 790 questions TruthfulQA ;
+- 9 480 réponses sources ;
+- des mesures de stabilité observée ;
+- une évaluation de factualité par un juge fondé sur OpenAI ;
+- une évaluation de factualité par un juge fondé sur Mistral ;
+- l’accord inter-juges ;
+- le kappa de Cohen comme indicateur secondaire d’accord ;
+- la conservation séparée des décisions de chaque juge.
 
-Its purpose is to compare observed response stability with externally judged factuality across a broad factual-evaluation corpus.
+Son objectif est de comparer la stabilité observée des réponses avec leur factualité évaluée extérieurement sur un large corpus factuel.
 
-The two factuality judges are not merged into one absolute factuality score.
+Les deux juges de factualité ne sont pas fusionnés en un score absolu unique.
 
-Their separate outputs make disagreement visible and preserve the limits of automated factuality assessment.
+La séparation de leurs résultats rend leurs désaccords visibles et préserve les limites de l’évaluation automatisée de la factualité.
 
-Release directory:
+Répertoire de release :
 
 ```text
 releases/july2026-behavior-cartography/judged-cartography-12x790/
@@ -90,35 +90,35 @@ releases/july2026-behavior-cartography/judged-cartography-12x790/
 
 ---
 
-## Protocol 2 — Runtime Stability Cartography
+## Protocole 2 — Cartographie de stabilité runtime
 
-The second protocol is based on:
+Le second protocole repose sur :
 
 ```text
-12 de-identified AI profiles
-× 3 repeated waves
-× 150 balanced questions
-= 5,400 executions
+12 profils d’IA désidentifiés
+× 3 vagues répétées
+× 150 questions équilibrées
+= 5 400 exécutions
 ```
 
-The protocol includes:
+Le protocole comprend :
 
-- 12 de-identified AI profiles;
-- 3 repeated execution waves;
-- a balanced panel of 150 questions;
-- 5,400 executions;
-- stability measurements;
-- semantic-variation signals;
-- coherence indicators;
-- latency observations;
-- behavioural-regime classification;
-- comparison across repeated waves.
+- 12 profils d’IA désidentifiés ;
+- 3 vagues d’exécution répétées ;
+- un panel équilibré de 150 questions ;
+- 5 400 exécutions ;
+- des mesures de stabilité ;
+- des signaux de variation sémantique ;
+- des indicateurs de cohérence ;
+- des observations de latence ;
+- une classification des régimes comportementaux ;
+- des comparaisons entre vagues répétées.
 
-Its purpose is to observe runtime variability and changes in behavioural regime under repeated and documented execution conditions.
+Son objectif est d’observer la variabilité runtime et les changements de régime comportemental dans des conditions d’exécution répétées et documentées.
 
-This protocol focuses on repeated behaviour rather than external factuality judgement.
+Ce protocole porte sur le comportement répété plutôt que sur un jugement externe de factualité.
 
-Release directory:
+Répertoire de release :
 
 ```text
 releases/july2026-behavior-cartography/runtime-stability-12x3x150/
@@ -126,318 +126,318 @@ releases/july2026-behavior-cartography/runtime-stability-12x3x150/
 
 ---
 
-## Why the protocols remain separate
+## Pourquoi les protocoles restent séparés
 
-The two protocols are complementary, but they are not interchangeable.
+Les deux protocoles sont complémentaires, mais ils ne sont pas interchangeables.
 
-The judged protocol evaluates behaviour across a broad factual corpus and compares observed stability with two independent factuality assessments.
+Le protocole jugé évalue le comportement sur un large corpus factuel et compare la stabilité observée à deux évaluations indépendantes de factualité.
 
-The runtime protocol evaluates how behaviour changes across repeated executions and waves.
+Le protocole runtime évalue la manière dont le comportement varie entre des exécutions et des vagues répétées.
 
-They therefore answer different questions:
+Ils répondent donc à des questions différentes :
 
-| Protocol | Primary question |
+| Protocole | Question principale |
 |---|---|
-| Judged Cartography — `12 × 790` | How do stability and judged factuality compare across a broad factual corpus? |
-| Runtime Cartography — `12 × 3 × 150` | How does behaviour vary across repeated runtime conditions? |
+| Cartographie jugée — `12 × 790` | Comment la stabilité et la factualité jugée se comparent-elles sur un large corpus factuel ? |
+| Cartographie runtime — `12 × 3 × 150` | Comment le comportement varie-t-il dans des conditions runtime répétées ? |
 
-The protocols are not merged into a universal quality score.
+Les protocoles ne sont pas fusionnés en un score universel de qualité.
 
-A system may appear stable while producing factually weak answers.
+Un système peut paraître stable tout en produisant des réponses factuellement faibles.
 
-A system may appear variable while still producing factually acceptable answers.
+Un système peut paraître variable tout en produisant des réponses factuellement acceptables.
 
-A judge may disagree with another judge without either result becoming an absolute truth guarantee.
-
----
-
-## Monthly publication cycle
-
-The Cartography is designed as a recurring monthly observation programme.
-
-Each monthly cycle may include one or more protocols depending on:
-
-- data availability;
-- methodological maturity;
-- campaign quality;
-- coverage;
-- validation status;
-- publication readiness.
-
-Monthly releases are published in dated directories and preserve their own:
-
-- protocol version;
-- scope;
-- metrics;
-- limitations;
-- manifests;
-- data boundaries;
-- interpretation rules.
-
-Longitudinal comparisons may be introduced as the number of compatible monthly releases increases.
-
-No comparison across months should be made without first verifying that the underlying protocols, datasets, scoring rules and release conditions are compatible.
+Un juge peut être en désaccord avec un autre sans que le résultat de l’un ou de l’autre constitue une garantie absolue de vérité.
 
 ---
 
-## Public data and evidence
+## Cycle de publication mensuel
 
-Depending on the protocol and release, the public repository may expose:
+La Cartographie est conçue comme un programme récurrent d’observation mensuelle.
 
-- aggregated results by de-identified profile;
-- aggregated results by question or question family;
-- observed stability measurements;
-- factuality results from each judge;
-- inter-judge agreement;
-- Cohen’s kappa;
-- semantic-variation indicators;
-- coherence indicators;
-- latency summaries;
-- behavioural-regime distributions;
-- coverage and completeness information;
-- metric definitions;
-- methodology documents;
-- protocol versions;
-- release manifests;
-- integrity hashes;
-- analytical reports;
-- visual cartographies;
-- documented limitations.
+Chaque cycle mensuel peut inclure un ou plusieurs protocoles selon :
 
-Public evidence is designed to support:
+- la disponibilité des données ;
+- la maturité méthodologique ;
+- la qualité de la campagne ;
+- la couverture ;
+- le statut de validation ;
+- l’état de préparation de la publication.
 
-- internal consistency checks;
-- methodological review;
-- independent analysis;
-- comparison across profiles;
-- comparison across releases;
-- public discussion of observed behavioural properties.
+Les releases mensuelles sont publiées dans des répertoires datés et conservent leurs propres :
+
+- versions de protocole ;
+- périmètres ;
+- métriques ;
+- limites ;
+- manifestes ;
+- frontières de publication des données ;
+- règles d’interprétation.
+
+Des comparaisons longitudinales pourront être introduites à mesure que le nombre de releases mensuelles compatibles augmentera.
+
+Aucune comparaison entre mois ne doit être réalisée sans vérifier au préalable la compatibilité des protocoles, des jeux de données, des règles de scoring et des conditions de publication.
 
 ---
 
-## Protected and restricted data
+## Données et preuves publiques
 
-Public transparency does not require uncontrolled disclosure of the operational assets that protect the integrity, security and continuity of the measurement programme.
+Selon le protocole et la release, le dépôt public peut exposer :
 
-Depending on the protocol, the protected measurement boundary may include:
+- des résultats agrégés par profil désidentifié ;
+- des résultats agrégés par question ou famille de questions ;
+- des mesures de stabilité observée ;
+- les résultats de factualité de chaque juge ;
+- l’accord inter-juges ;
+- le kappa de Cohen ;
+- des indicateurs de variation sémantique ;
+- des indicateurs de cohérence ;
+- des synthèses de latence ;
+- des distributions de régimes comportementaux ;
+- des informations de couverture et de complétude ;
+- les définitions des métriques ;
+- les documents méthodologiques ;
+- les versions des protocoles ;
+- les manifestes de release ;
+- les empreintes d’intégrité ;
+- les rapports analytiques ;
+- les cartographies visuelles ;
+- les limites documentées.
 
-- provider and model identities;
-- the private profile-mapping registry;
-- complete prompts where disclosure would compromise the protocol;
-- complete raw responses;
-- request IDs and trace IDs;
-- raw API payloads;
-- exact execution timestamps;
-- API keys and infrastructure credentials;
-- detailed unaggregated token and cost data;
-- internal diagnostics;
-- debugging material;
-- judge configuration details;
-- private campaign exports;
-- internal pipeline versions;
-- proprietary calculation logic;
-- artefacts that could enable profile re-identification;
-- unpublished results;
-- experimental signals not yet qualified for public release;
-- review notes and internal validation material.
+Les preuves publiques sont conçues pour permettre :
 
-This separation preserves public scrutiny while protecting operational continuity, confidentiality, research integrity and de-identification.
+- des contrôles de cohérence interne ;
+- la revue méthodologique ;
+- l’analyse indépendante ;
+- la comparaison entre profils ;
+- la comparaison entre releases ;
+- la discussion publique des propriétés comportementales observées.
 
 ---
 
-## De-identification
+## Données protégées et restreintes
 
-Public profiles use stable opaque identifiers in the format:
+La transparence publique n’impose pas la divulgation incontrôlée des actifs opérationnels qui protègent l’intégrité, la sécurité et la continuité du programme de mesure.
+
+Selon le protocole, la frontière de mesure protégée peut inclure :
+
+- l’identité des fournisseurs et des modèles ;
+- le registre privé de correspondance des profils ;
+- les prompts complets lorsque leur publication compromettrait le protocole ;
+- les réponses brutes complètes ;
+- les identifiants de requête et de trace ;
+- les payloads API bruts ;
+- les horodatages précis des exécutions ;
+- les clés API et identifiants d’infrastructure ;
+- les données détaillées et non agrégées de tokens et de coûts ;
+- les diagnostics internes ;
+- les éléments de débogage ;
+- les détails de configuration des juges ;
+- les exports privés des campagnes ;
+- les versions internes des pipelines ;
+- la logique de calcul propriétaire ;
+- les artefacts pouvant permettre la réidentification des profils ;
+- les résultats non publiés ;
+- les signaux expérimentaux non encore qualifiés pour une publication publique ;
+- les notes de revue et les éléments internes de validation.
+
+Cette séparation permet l’examen public tout en protégeant la continuité opérationnelle, la confidentialité, l’intégrité de la recherche et la désidentification.
+
+---
+
+## Désidentification
+
+Les profils publics utilisent des identifiants opaques stables au format :
 
 ```text
 PROFILE-XXXXXX
 ```
 
-These identifiers are not derived from:
+Ces identifiants ne sont pas dérivés :
 
-- provider names;
-- model names;
-- alphabetical order;
-- performance;
-- factuality;
-- stability;
-- score;
-- ranking.
+- des noms de fournisseurs ;
+- des noms de modèles ;
+- de l’ordre alphabétique ;
+- de la performance ;
+- de la factualité ;
+- de la stabilité ;
+- du score ;
+- du classement.
 
-The private mapping between public profiles and observed systems is retained separately.
+La correspondance privée entre les profils publics et les systèmes observés est conservée séparément.
 
-The releases are **de-identified**. They are not presented as irreversibly anonymous.
+Les releases sont **désidentifiées**. Elles ne sont pas présentées comme irréversiblement anonymes.
 
-Residual re-identification risk is treated as a publication limitation.
-
----
-
-## Observed signal families
-
-Depending on the protocol and available coverage, the Cartography may publish or document:
-
-- stability;
-- semantic variation;
-- coherence;
-- factuality assessment;
-- inter-judge agreement;
-- Cohen’s kappa;
-- behavioural regimes;
-- inter-wave variation;
-- latency;
-- coverage and completeness;
-- cost and token-consumption indicators where available;
-- `delta_g`, reported as an advanced observable runtime-variation signal.
-
-No individual indicator should be interpreted in isolation as a complete assessment of quality, truthfulness, safety, compliance or governability.
+Le risque résiduel de réidentification est traité comme une limite de publication.
 
 ---
 
-## Interpretation doctrine
+## Familles de signaux observés
 
-The Cartography follows one fundamental rule:
+Selon le protocole et la couverture disponible, la Cartographie peut publier ou documenter :
 
-> A signal is an observation requiring interpretation, not a verdict.
+- la stabilité ;
+- la variation sémantique ;
+- la cohérence ;
+- l’évaluation de factualité ;
+- l’accord inter-juges ;
+- le kappa de Cohen ;
+- les régimes comportementaux ;
+- la variation entre vagues ;
+- la latence ;
+- la couverture et la complétude ;
+- les indicateurs de coûts et de consommation de tokens lorsqu’ils sont disponibles ;
+- `delta_g`, publié comme signal avancé observable de variation runtime.
 
-An observed difference does not, by itself, establish:
-
-- the superiority of one system over another;
-- a provider-side model update;
-- a causal explanation;
-- a safety level;
-- regulatory compliance;
-- deployment suitability;
-- truthfulness across all domains;
-- overall quality;
-- governability in a specific operational context.
-
-The appropriate formulation is:
-
-> A behavioural difference was observed under the conditions of the protocol.
-
-Causal attribution requires additional evidence.
+Aucun indicateur individuel ne doit être interprété isolément comme une évaluation complète de la qualité, de la véracité, de la sécurité, de la conformité ou de la gouvernabilité.
 
 ---
 
-## Reproducibility boundary
+## Doctrine d’interprétation
 
-The public repository is designed to support transparent inspection of:
+La Cartographie suit une règle fondamentale :
 
-- methods;
-- protocol structure;
-- released metrics;
-- aggregated data;
-- coverage;
-- manifests;
-- integrity information;
-- analytical limitations.
+> Un signal est une observation qui exige une interprétation, et non un verdict.
 
-Full reproduction from source may require access to:
+Une différence observée n’établit pas, à elle seule :
 
-- protected campaign exports;
-- private infrastructure configuration;
-- restricted prompt material;
-- private judge settings;
-- non-public execution traces;
-- internal validation artefacts.
+- la supériorité d’un système sur un autre ;
+- une mise à jour du modèle côté fournisseur ;
+- une explication causale ;
+- un niveau de sécurité ;
+- la conformité réglementaire ;
+- l’adéquation au déploiement ;
+- la véracité dans tous les domaines ;
+- la qualité globale ;
+- la gouvernabilité dans un contexte opérationnel donné.
 
-Each release documents its own reproducibility boundary.
+La formulation appropriée est :
 
-Public reproducibility means that released artefacts can be inspected, checked and analysed within the limits explicitly stated by the programme.
+> Une différence comportementale a été observée dans les conditions du protocole.
+
+L’attribution causale exige des preuves complémentaires.
 
 ---
 
-## What this programme is not
+## Limites de reproductibilité
 
-The NeoMundi AI Behavior Cartography is not:
+Le dépôt public est conçu pour permettre l’examen transparent :
 
-- a provider ranking;
-- a model leaderboard;
-- a universal benchmark score;
-- a safety certification;
-- a guarantee of factual accuracy;
-- a legal or regulatory determination;
-- a deployment authorisation;
-- a substitute for human review;
-- a substitute for domain-specific validation;
-- a substitute for runtime governance.
+- des méthodes ;
+- de la structure des protocoles ;
+- des métriques publiées ;
+- des données agrégées ;
+- de la couverture ;
+- des manifestes ;
+- des informations d’intégrité ;
+- des limites analytiques.
 
-It is a public metrological instrument for mapping distinct properties of AI behaviour under documented conditions.
+La reproduction complète depuis les sources peut nécessiter l’accès :
 
----
+- aux exports protégés des campagnes ;
+- à la configuration privée de l’infrastructure ;
+- aux prompts restreints ;
+- aux paramètres privés des juges ;
+- aux traces d’exécution non publiques ;
+- aux artefacts internes de validation.
 
-## Scientific principles
+Chaque release documente ses propres limites de reproductibilité.
 
-The programme follows seven principles:
-
-1. **Measure before interpreting.**
-2. **Keep distinct properties analytically separate.**
-3. **Repeat before generalising.**
-4. **Never confuse stability with truth.**
-5. **Preserve judge disagreement rather than conceal it.**
-6. **Distinguish observation, interpretation and causal attribution.**
-7. **Treat every signal as an element of evidence, not as a verdict.**
+La reproductibilité publique signifie que les artefacts publiés peuvent être examinés, vérifiés et analysés dans les limites explicitement définies par le programme.
 
 ---
 
-## Repository navigation
+## Ce que ce programme n’est pas
 
-| Resource | English | Français |
+La Cartographie du comportement des IA NeoMundi n’est pas :
+
+- un classement de fournisseurs ;
+- un leaderboard de modèles ;
+- un score universel de benchmark ;
+- une certification de sécurité ;
+- une garantie d’exactitude factuelle ;
+- une détermination juridique ou réglementaire ;
+- une autorisation de déploiement ;
+- un substitut à la revue humaine ;
+- un substitut à une validation métier ;
+- un substitut à la gouvernance runtime.
+
+Il s’agit d’un instrument métrologique public destiné à cartographier des propriétés distinctes du comportement des IA dans des conditions documentées.
+
+---
+
+## Principes scientifiques
+
+Le programme suit sept principes :
+
+1. **Mesurer avant d’interpréter.**
+2. **Maintenir séparées les propriétés distinctes.**
+3. **Répéter avant de généraliser.**
+4. **Ne jamais confondre stabilité et vérité.**
+5. **Préserver les désaccords entre juges plutôt que les dissimuler.**
+6. **Distinguer observation, interprétation et attribution causale.**
+7. **Traiter chaque signal comme un élément de preuve, et non comme un verdict.**
+
+---
+
+## Navigation du dépôt
+
+| Ressource | English | Français |
 |---|---|---|
-| Programme overview | [README.md](./README.md) | [README_FR.md](./README_FR.md) |
-| Methodology | [Methodology_EN.md](./Methodology_EN.md) | [Methodologie_FR.md](./Methodologie_FR.md) |
-| Usage guide | [USAGE_EN.md](./USAGE_EN.md) | [USAGE_FR.md](./USAGE_FR.md) |
-| Open science and contributions | [OPEN_SCIENCE.md](./OPEN_SCIENCE.md) | [OPEN_SCIENCE.md](./OPEN_SCIENCE.md) |
-| Monthly releases | [releases/](./releases/) | [releases/](./releases/) |
+| Présentation du programme | [README.md](./README.md) | [README_FR.md](./README_FR.md) |
+| Méthodologie | [Methodology_EN.md](./Methodology_EN.md) | [Methodologie_FR.md](./Methodologie_FR.md) |
+| Guide d’utilisation | [USAGE_EN.md](./USAGE_EN.md) | [USAGE_FR.md](./USAGE_FR.md) |
+| Science ouverte et contributions | [OPEN_SCIENCE.md](./OPEN_SCIENCE.md) | [OPEN_SCIENCE.md](./OPEN_SCIENCE.md) |
+| Releases mensuelles | [releases/](./releases/) | [releases/](./releases/) |
 | Scripts | [scripts/](./scripts/) | [scripts/](./scripts/) |
 
 ---
 
-## Related NeoMundi programmes
+## Programmes NeoMundi associés
 
-- [NeoMundi AI Observatory](https://github.com/neomundi-io/neomundi-ai-observatory)
+- [Observatoire IA NeoMundi](https://github.com/neomundi-io/neomundi-ai-observatory)
 - [NeoMundi Weekly Barometer](https://github.com/neomundi-io/NeoMundi-Weekly-Barometer)
-- [NeoMundi official website — English](https://neomundi.org/en/home)
-- [NeoMundi official website — French](https://neomundi.org/)
-- [From AI Observability to Governance Metrology](https://doi.org/10.5281/zenodo.21250268)
-- [Theoretical Framework — Law E](https://doi.org/10.5281/zenodo.19385052)
+- [Site officiel NeoMundi — Français](https://neomundi.org/)
+- [Site officiel NeoMundi — English](https://neomundi.org/en/home)
+- [De l’observabilité des IA à la métrologie de gouvernance](https://doi.org/10.5281/zenodo.21250268)
+- [Cadre théorique — Loi E](https://doi.org/10.5281/zenodo.19385052)
 
 ---
 
-## Open science and contributions
+## Science ouverte et contributions
 
-The repository supports methodological review, independent analysis and documented contribution.
+Le dépôt soutient la revue méthodologique, l’analyse indépendante et la contribution documentée.
 
-See:
+Voir :
 
-- [Open science and contributions](./OPEN_SCIENCE.md)
-- [NeoMundi AI Observatory contribution framework](https://github.com/neomundi-io/neomundi-ai-observatory/tree/main/governance)
+- [Science ouverte et contributions](./OPEN_SCIENCE.md)
+- [Cadre de contribution de l’Observatoire IA NeoMundi](https://github.com/neomundi-io/neomundi-ai-observatory/tree/main/governance)
 
-Contributions may concern:
+Les contributions peuvent porter sur :
 
-- methodology;
-- protocol review;
-- data analysis;
-- factuality evaluation;
-- reproducibility;
-- visualisation;
-- scientific writing;
-- translation;
-- governance;
-- interoperability;
-- sector-specific interpretation.
+- la méthodologie ;
+- la revue des protocoles ;
+- l’analyse de données ;
+- l’évaluation de factualité ;
+- la reproductibilité ;
+- la visualisation ;
+- la rédaction scientifique ;
+- la traduction ;
+- la gouvernance ;
+- l’interopérabilité ;
+- l’interprétation sectorielle.
 
-Contributions do not create authority over the programme, the observed systems or NeoMundi’s institutional decisions unless explicitly agreed in writing.
-
----
-
-## License
-
-This repository uses the [Apache License 2.0](LICENSE).
-
-Specific datasets, reports, scripts, external contributions or release artefacts may include additional notices where required.
+Les contributions ne créent aucune autorité sur le programme, les systèmes observés ou les décisions institutionnelles de NeoMundi, sauf accord écrit explicite.
 
 ---
 
-**NeoMundi AI Behavior Cartography**  
-*Comparative measurement without universal ranking.*
+## Licence
+
+Ce dépôt utilise la [licence Apache 2.0](LICENSE).
+
+Certains jeux de données, rapports, scripts, contributions externes ou artefacts de release peuvent comporter des mentions complémentaires lorsque cela est nécessaire.
+
+---
+
+**Cartographie du comportement des IA NeoMundi**  
+*Mesure comparative sans classement universel.*
