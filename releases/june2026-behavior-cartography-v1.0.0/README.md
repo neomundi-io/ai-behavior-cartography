@@ -1,3 +1,16 @@
+> **Historical release notice**
+>
+> This June 2026 release is preserved as an historical research artefact and reflects the methodology, terminology and publication structure used at the time.
+>
+> The current canonical Cartography methodology and programme structure are documented here:
+>
+> - [Current programme overview](../../README.md)
+> - [Current public methodology — English](../../Methodology_EN.md)
+> - [Méthodologie publique actuelle — Français](../../Methodologie_FR.md)
+> - [July 2026 Cartography release](../july2026-behavior-cartography/)
+>
+> Historical results and interpretations below have not been rewritten to match later methodological revisions.
+
 > **French version available below / Version française disponible plus bas**
 
 # NeoMundi — June 2026 Behavioral Cartography
