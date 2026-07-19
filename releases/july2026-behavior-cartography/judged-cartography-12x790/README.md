@@ -1,105 +1,202 @@
-# July 2026 Judged AI Behavior Cartography — 12 × 790
+# July 2026 Judged AI Behavior Cartography — `12 × 790`
 
-This public release presents the July 2026 NeoMundi AI Behavior Cartography based on a single, simplified protocol:
+🌐 **Documentation:** [July 2026 release index](../README.md) · [Programme overview](../../../README.md) · [Public methodology](../../../Methodology_EN.md) · [Méthodologie publique](../../../Methodologie_FR.md)
 
-- 12 de-identified AI profiles
-- 790 TruthfulQA questions per profile
-- 9,480 source responses in total
-- one observed stability measurement per response
-- two independent automated factuality assessments
+🌍 **NeoMundi:** [AI Observatory](https://github.com/neomundi-io/neomundi-ai-observatory) · [Weekly Barometer](https://github.com/neomundi-io/NeoMundi-Weekly-Barometer)
 
-The public profiles are represented by persistent pseudonymous identifiers. Provider and model names are not disclosed.
+This public release presents the **judged protocol** of the July 2026 NeoMundi AI Behavior Cartography.
 
-## Methodological simplification
+It is based on one coherent analytical population:
 
-The monthly public cartography now relies exclusively on the complete `12 × 790` judged corpus.
+```text
+12 de-identified AI profiles
+× 790 TruthfulQA questions per profile
+= 9,480 source responses
+```
 
-An earlier methodological design considered combining these results with a separate balanced panel of:
+Each source response is associated with:
 
-- 12 profiles
-- 3 question families
-- 150 observations per family
+- one observed stability measurement;
+- one factuality assessment from an OpenAI-based judge, where available;
+- one factuality assessment from a Mistral-based judge, where available.
 
-This cross-protocol aggregation is no longer used in the public monthly cartography.
+The two factuality assessments are preserved separately.
 
-The two protocols differ in their sampling logic, question composition and intended analytical purpose. Combining them would make the interpretation less direct and could introduce unnecessary methodological ambiguity.
+They are not merged into a single consensus or absolute factuality score.
 
-The July public release therefore uses one coherent analytical population only: the 9,480 responses generated from the 790-question TruthfulQA corpus.
+---
 
-The separate `12 × 3 × 150` panel may still be studied independently, but it is not included in the metrics published in this release.
+## Scope of this release
 
-## Public metrics
+This directory contains the public outputs of the **Judged AI Behavior Cartography — `12 × 790`** protocol only.
 
-Three principal indicators are reported for each de-identified profile:
+The sibling runtime protocol:
+
+```text
+12 de-identified AI profiles
+× 3 repeated waves
+× 150 balanced questions
+= 5,400 planned executions
+```
+
+is published separately in:
+
+[Runtime Stability Cartography — `12 × 3 × 150`](../runtime-stability-cartography-12x3x150/)
+
+The two protocols differ in:
+
+- sampling logic;
+- question composition;
+- execution structure;
+- metric families;
+- analytical purpose.
+
+They therefore remain analytically separate and are not combined into a universal quality score.
+
+---
+
+## Public profile identifiers
+
+Observed systems are represented through stable opaque identifiers in the format:
+
+```text
+PROFILE-XXXXXX
+```
+
+These public identifiers are not derived from:
+
+- provider names;
+- model names;
+- alphabetical order;
+- performance;
+- factuality;
+- stability;
+- score;
+- ranking.
+
+The private mapping between public profile identifiers and observed systems is retained separately and is not included in this repository.
+
+The release is **de-identified**. It is not presented as irreversibly anonymous.
+
+---
+
+## Principal public metrics
+
+Three principal indicators are reported for each de-identified profile.
 
 ### Mean observed stability
 
-`mean_observed_stability_pct`
+```text
+mean_observed_stability_pct
+```
 
-The average observed behavioral stability across the 790 responses.
+The average observed behavioural stability across the 790 source responses.
 
-This indicator measures the regularity of the observed response behavior. It does not establish that the responses are factually correct.
+This indicator measures the regularity of observed response behaviour.
 
-### Factuality — OpenAI judge
+It does not establish that the responses are factually correct.
 
-`factuality_openai_pct`
+### Factuality — OpenAI-based judge
+
+```text
+factuality_openai_pct
+```
 
 The proportion of scored responses classified as factually acceptable by the OpenAI-based judge.
 
-### Factuality — Mistral judge
+### Factuality — Mistral-based judge
 
-`factuality_mistral_pct`
+```text
+factuality_mistral_pct
+```
 
 The proportion of scored responses classified as factually acceptable by the Mistral-based judge.
 
-The two factuality assessments are intentionally preserved separately. They are not merged into a single consensus score.
+The two factuality assessments remain separate.
+
+Neither judge is treated as an absolute source of truth.
+
+---
 
 ## Secondary methodological indicators
 
 The release also includes:
 
-- `interjudge_agreement_pct`
-- `cohen_kappa`
-- `openai_scored_n`
-- `mistral_scored_n`
-- `interjudge_pairs_n`
+```text
+interjudge_agreement_pct
+cohen_kappa
+openai_scored_n
+mistral_scored_n
+interjudge_pairs_n
+```
 
-These fields document the level of agreement between the two judges and the effective number of observations available for each calculation.
+These fields document:
 
-Cohen’s kappa is provided as a secondary methodological indicator. It should be interpreted together with agreement rates, score coverage and the distribution of judge decisions.
+- the observed level of agreement between the two judges;
+- the effective number of scored observations;
+- the number of comparable judge pairs;
+- the coverage available for each calculation.
+
+Cohen’s kappa is provided as a secondary methodological indicator.
+
+It must be interpreted together with:
+
+- observed agreement;
+- score coverage;
+- class balance;
+- positive-verdict prevalence;
+- directional disagreement;
+- the effective number of comparable pairs.
+
+No single agreement statistic establishes judge validity or factual ground truth.
+
+---
 
 ## Coverage
 
-Each profile contains 790 source responses.
+Each profile contains:
+
+```text
+790 source responses
+```
 
 Automated factuality coverage may be lower than 790 for some profiles because not every response received a usable decision from both judges.
 
-For this reason, factuality percentages must always be read together with:
+Factuality percentages must therefore always be interpreted together with:
 
-- `openai_scored_n`
-- `mistral_scored_n`
-- `interjudge_pairs_n`
+```text
+openai_scored_n
+mistral_scored_n
+interjudge_pairs_n
+```
 
-No missing judge decision is automatically treated as a factual failure.
+A missing or invalid judge decision is not automatically treated as a factual failure.
 
-## Interpretation
+Rows excluded from inter-judge comparison must remain visible through coverage reporting.
 
-This release should not be interpreted as a model leaderboard.
+---
 
-The profiles are de-identified, and the purpose of the cartography is not to declare one provider or model universally superior to another.
+## Interpretation doctrine
 
-The objective is to observe differences between behavioral profiles across several independent dimensions.
+This release must not be interpreted as a model leaderboard.
+
+Its purpose is to observe differences among behavioural profiles across several distinct dimensions.
 
 In particular:
 
 - high stability does not imply high factuality;
-- high factuality does not imply behavioral stability;
+- high factuality does not imply behavioural stability;
 - agreement between automated judges does not establish ground truth;
-- a monthly observation is a measurement snapshot, not a permanent characterization of a system.
+- disagreement between judges is a methodological signal;
+- a monthly observation is a measurement snapshot, not a permanent characterisation of a system.
 
-The meaningful unit of analysis is therefore the multidimensional profile and, over time, its trajectory.
+The meaningful unit of analysis is the multidimensional profile and, over time, its trajectory.
 
-## Files
+> A signal is an observation requiring interpretation, not a verdict.
+
+---
+
+## Public files
 
 ### `public_monthly_cartography_profile_summary.csv`
 
@@ -107,67 +204,138 @@ Profile-level public dataset containing the principal and secondary metrics.
 
 ### `public_monthly_cartography_metrics.json`
 
-Machine-readable version of the public metrics and release metadata.
+Machine-readable release metadata and public metrics.
 
 ### `public_deidentification_audit.txt`
 
-Audit record confirming that:
+Audit record documenting that:
 
 - 12 private profiles were mapped;
 - 12 unique public profile identifiers were generated;
 - provider and model fields were removed;
-- forbidden provider or model terms were absent;
-- the private mapping was not exported.
+- forbidden provider or model terms were absent from the public export;
+- the private mapping registry was not exported.
 
-## De-identification
+The release manifest or public directory inventory should be treated as authoritative when additional files are present.
 
-The public release uses persistent pseudonymous identifiers in the form:
+---
 
-`PROFILE-XXXXXX`
+## Public release boundary
 
-The private mapping between these identifiers and the underlying systems is not part of the public repository.
-
-The de-identification audit reports the release as safe for public publication. :contentReference[oaicite:0]{index=0}
-
-## Release scope
-
-This release contains aggregated profile-level results only.
+This release contains aggregated profile-level results.
 
 It does not include:
 
-- private provider or model identities;
-- the private correspondence table;
-- raw prompts and responses;
+- provider or model identities;
+- the private profile-mapping registry;
+- raw prompts;
+- complete raw responses;
+- request IDs;
+- trace IDs;
+- raw API payloads;
+- exact execution timestamps;
 - internal execution metadata;
-- the separate balanced `12 × 3 × 150` protocol;
+- private judge settings;
+- internal diagnostics;
+- unpublished campaign exports;
+- the sibling runtime `12 × 3 × 150` dataset;
 - a unified or composite ranking.
+
+Public transparency does not require uncontrolled disclosure of protected operational material.
+
+---
 
 ## Limitations
 
 The results are conditional on:
 
-- the July 2026 execution period;
+- the July 2026 observation period;
 - the selected TruthfulQA corpus;
-- the runtime conditions observed during collection;
+- the execution conditions used during collection;
 - the NeoMundi stability measurement framework;
-- the behavior and coverage of the two automated judges.
+- the behaviour and coverage of the two automated judges;
+- the inclusion and exclusion rules applied during scoring;
+- the aggregation rules used for this release.
 
-Automated factuality evaluation remains an estimation procedure. Judge disagreement and incomplete coverage are retained in the public data rather than concealed through forced aggregation.
+Automated factuality evaluation remains an estimation procedure.
 
-## Reproducibility and future releases
+Judge disagreement and incomplete coverage are retained in the public data rather than concealed through forced aggregation.
 
-Future monthly releases should preserve:
+The results must not be generalised automatically to:
 
-- the same public profile identifiers;
-- the same principal metric definitions;
-- explicit score coverage;
+- other corpora;
+- other languages;
+- other domains;
+- production deployments;
+- high-risk use cases;
+- future model versions;
+- future judge configurations.
+
+---
+
+## Reproducibility boundary
+
+The public artefacts can be inspected for:
+
+- internal consistency;
+- metric definitions;
+- score coverage;
+- profile-level aggregation;
+- release metadata;
+- de-identification controls;
+- methodological limitations.
+
+Full reproduction from source may require access to protected material, including:
+
+- private campaign exports;
+- complete source responses;
+- complete prompt material;
+- private profile mappings;
+- judge configuration details;
+- internal execution traces;
+- infrastructure configuration;
+- validation artefacts not included in the public release.
+
+Public reproducibility therefore applies within the boundaries explicitly documented by the release.
+
+---
+
+## Future monthly releases
+
+Compatible future releases should preserve:
+
+- stable public profile identifiers;
+- the principal metric definitions;
+- explicit judge coverage;
 - separate factuality results for each judge;
-- transparent methodological changes.
+- documented inter-judge metrics;
+- transparent methodological changes;
+- release manifests and integrity information;
+- explicit compatibility notes for longitudinal comparison.
 
-Any future modification of the corpus, judges, thresholds or aggregation rules should be documented before longitudinal comparison.
+Any modification to the corpus, judges, thresholds, inclusion rules or aggregation logic must be documented before comparisons are made across months.
+
+Historical releases should not be silently rewritten.
+
+---
 
 ## Responsible use
 
-These measurements are signals, not verdicts.
+These measurements are intended to support:
 
-They are intended to support AI observability, behavioral comparison and longitudinal governance. They should not be used alone to make procurement, safety, compliance or deployment decisions.
+- AI observability;
+- behavioural comparison;
+- methodological review;
+- longitudinal analysis;
+- governance evidence.
+
+They should not be used alone to make:
+
+- procurement decisions;
+- safety determinations;
+- compliance determinations;
+- deployment decisions;
+- universal quality claims;
+- provider rankings.
+
+**NeoMundi publishes observable, auditable and reproducible behavioural evidence — not rankings.**
