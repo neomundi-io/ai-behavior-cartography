@@ -1,0 +1,164 @@
+{
+  "generated_at_utc": "2026-08-04T18:54:22+00:00",
+  "release_type": "deidentified_monthly_cartography",
+  "profile_count": 12,
+  "source_response_count": 9480,
+  "public_metrics": [
+    "mean_observed_stability_pct",
+    "factuality_openai_pct",
+    "factuality_mistral_pct"
+  ],
+  "secondary_methodological_metrics": [
+    "interjudge_agreement_pct",
+    "cohen_kappa",
+    "openai_scored_n",
+    "mistral_scored_n",
+    "interjudge_pairs_n"
+  ],
+  "profiles": [
+    {
+      "profile": "PROFILE-161CC5",
+      "n_responses": 790,
+      "mean_observed_stability_pct": 91.38,
+      "factuality_openai_pct": 78.99,
+      "factuality_mistral_pct": 76.21,
+      "interjudge_agreement_pct": 86.83,
+      "cohen_kappa": 0.6224,
+      "openai_scored_n": 790,
+      "mistral_scored_n": 782,
+      "interjudge_pairs_n": 782
+    },
+    {
+      "profile": "PROFILE-212079",
+      "n_responses": 790,
+      "mean_observed_stability_pct": 90.33,
+      "factuality_openai_pct": 66.84,
+      "factuality_mistral_pct": 68.93,
+      "interjudge_agreement_pct": 84.78,
+      "cohen_kappa": 0.6514,
+      "openai_scored_n": 790,
+      "mistral_scored_n": 782,
+      "interjudge_pairs_n": 782
+    },
+    {
+      "profile": "PROFILE-486F91",
+      "n_responses": 790,
+      "mean_observed_stability_pct": 88.89,
+      "factuality_openai_pct": 54.94,
+      "factuality_mistral_pct": 60.49,
+      "interjudge_agreement_pct": 82.1,
+      "cohen_kappa": 0.6345,
+      "openai_scored_n": 790,
+      "mistral_scored_n": 782,
+      "interjudge_pairs_n": 782
+    },
+    {
+      "profile": "PROFILE-48C581",
+      "n_responses": 790,
+      "mean_observed_stability_pct": 88.89,
+      "factuality_openai_pct": 51.14,
+      "factuality_mistral_pct": 62.53,
+      "interjudge_agreement_pct": 82.74,
+      "cohen_kappa": 0.6532,
+      "openai_scored_n": 790,
+      "mistral_scored_n": 782,
+      "interjudge_pairs_n": 782
+    },
+    {
+      "profile": "PROFILE-59664C",
+      "n_responses": 790,
+      "mean_observed_stability_pct": 91.4,
+      "factuality_openai_pct": 83.92,
+      "factuality_mistral_pct": 82.48,
+      "interjudge_agreement_pct": 88.62,
+      "cohen_kappa": 0.5933,
+      "openai_scored_n": 790,
+      "mistral_scored_n": 782,
+      "interjudge_pairs_n": 782
+    },
+    {
+      "profile": "PROFILE-5A5C60",
+      "n_responses": 790,
+      "mean_observed_stability_pct": 90.55,
+      "factuality_openai_pct": 76.58,
+      "factuality_mistral_pct": 72.76,
+      "interjudge_agreement_pct": 86.96,
+      "cohen_kappa": 0.6558,
+      "openai_scored_n": 790,
+      "mistral_scored_n": 782,
+      "interjudge_pairs_n": 782
+    },
+    {
+      "profile": "PROFILE-5B3BB7",
+      "n_responses": 790,
+      "mean_observed_stability_pct": 89.97,
+      "factuality_openai_pct": 63.92,
+      "factuality_mistral_pct": 63.68,
+      "interjudge_agreement_pct": 82.86,
+      "cohen_kappa": 0.6295,
+      "openai_scored_n": 790,
+      "mistral_scored_n": 782,
+      "interjudge_pairs_n": 782
+    },
+    {
+      "profile": "PROFILE-638E26",
+      "n_responses": 790,
+      "mean_observed_stability_pct": 90.45,
+      "factuality_openai_pct": 68.35,
+      "factuality_mistral_pct": 72.12,
+      "interjudge_agreement_pct": 84.27,
+      "cohen_kappa": 0.6252,
+      "openai_scored_n": 790,
+      "mistral_scored_n": 782,
+      "interjudge_pairs_n": 782
+    },
+    {
+      "profile": "PROFILE-739F7C",
+      "n_responses": 790,
+      "mean_observed_stability_pct": 89.21,
+      "factuality_openai_pct": 53.92,
+      "factuality_mistral_pct": 57.67,
+      "interjudge_agreement_pct": 84.27,
+      "cohen_kappa": 0.6818,
+      "openai_scored_n": 790,
+      "mistral_scored_n": 782,
+      "interjudge_pairs_n": 782
+    },
+    {
+      "profile": "PROFILE-B912EA",
+      "n_responses": 790,
+      "mean_observed_stability_pct": 90.97,
+      "factuality_openai_pct": 81.01,
+      "factuality_mistral_pct": 80.82,
+      "interjudge_agreement_pct": 92.07,
+      "cohen_kappa": 0.743,
+      "openai_scored_n": 790,
+      "mistral_scored_n": 782,
+      "interjudge_pairs_n": 782
+    },
+    {
+      "profile": "PROFILE-DEA9C5",
+      "n_responses": 790,
+      "mean_observed_stability_pct": 90.06,
+      "factuality_openai_pct": 73.54,
+      "factuality_mistral_pct": 67.01,
+      "interjudge_agreement_pct": 86.7,
+      "cohen_kappa": 0.6836,
+      "openai_scored_n": 790,
+      "mistral_scored_n": 782,
+      "interjudge_pairs_n": 782
+    },
+    {
+      "profile": "PROFILE-F5FF91",
+      "n_responses": 790,
+      "mean_observed_stability_pct": 90.59,
+      "factuality_openai_pct": 71.14,
+      "factuality_mistral_pct": 69.31,
+      "interjudge_agreement_pct": 84.4,
+      "cohen_kappa": 0.6272,
+      "openai_scored_n": 790,
+      "mistral_scored_n": 782,
+      "interjudge_pairs_n": 782
+    }
+  ]
+}
