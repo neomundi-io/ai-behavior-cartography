@@ -1,3 +1,5 @@
+[← Retour à l’Observatoire IA NeoMundi](https://github.com/neomundi-io/neomundi-ai-observatory)
+
 # Cartographie du comportement des IA NeoMundi
 
 🌐 **Langue :** [English](./README.md) · [Français](./README_FR.md)
