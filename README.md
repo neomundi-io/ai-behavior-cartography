@@ -1,3 +1,5 @@
+[← Back to the NeoMundi AI Observatory](https://github.com/neomundi-io/neomundi-ai-observatory)
+
 # NeoMundi AI Behavior Cartography
 
 🌐 **Language:** [English](./README.md) · [Français](./README_FR.md)
