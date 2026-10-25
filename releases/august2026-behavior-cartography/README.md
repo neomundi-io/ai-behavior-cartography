@@ -72,9 +72,11 @@ This protocol observes:
 
 This protocol focuses on behavioural repeatability and runtime variation rather than external factuality judgement.
 
-**Status: data collection and validation in progress.**
+**Status: public runtime release available.**
 
-The public runtime release will be added after completion and validation of the three repeated waves.
+The detailed runtime release reports a complete 5,400-observation source panel across three waves. Read that release for metric-specific coverage and limitations; source-panel completeness does not imply that every metric is available for every observation.
+
+*Index aligned with the existing detailed release on 25 October 2026; no source data or measurements changed.*
 
 [Open the runtime stability Cartography release](./runtime-stability-cartography-12x3x150/)
 
